@@ -1,0 +1,215 @@
+[
+  {
+    "action_id": "ACT-S001",
+    "actor": "YouTube",
+    "date": "2025-02-01",
+    "action_type": "regulatory_legal",
+    "label_en": "Sample move 1",
+    "label_zh": "範例行動 1",
+    "responses": [
+      {
+        "responder": "UDN",
+        "date": "2025-03-13",
+        "lag_days": 40
+      },
+      {
+        "responder": "CNA",
+        "date": "2025-03-04",
+        "lag_days": 31
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S002",
+    "actor": "ETtoday",
+    "date": "2025-03-25",
+    "action_type": "partnership_licensing",
+    "label_en": "Sample move 2",
+    "label_zh": "範例行動 2",
+    "responses": [
+      {
+        "responder": "NOWnews",
+        "date": "2025-04-22",
+        "lag_days": 28
+      },
+      {
+        "responder": "EBC",
+        "date": "2025-06-11",
+        "lag_days": 78
+      },
+      {
+        "responder": "LTN",
+        "date": "2025-05-29",
+        "lag_days": 65
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S003",
+    "actor": "ETtoday",
+    "date": "2025-05-16",
+    "action_type": "pricing",
+    "label_en": "Sample move 3",
+    "label_zh": "範例行動 3",
+    "responses": [
+      {
+        "responder": "NOWnews",
+        "date": "2025-06-11",
+        "lag_days": 26
+      },
+      {
+        "responder": "TVBS",
+        "date": "2025-08-13",
+        "lag_days": 89
+      },
+      {
+        "responder": "CNA",
+        "date": "2025-08-06",
+        "lag_days": 82
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S004",
+    "actor": "Meta",
+    "date": "2025-07-07",
+    "action_type": "regulatory_legal",
+    "label_en": "Sample move 4",
+    "label_zh": "範例行動 4",
+    "responses": [
+      {
+        "responder": "EBC",
+        "date": "2025-08-05",
+        "lag_days": 29
+      },
+      {
+        "responder": "CNA",
+        "date": "2025-08-20",
+        "lag_days": 44
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S005",
+    "actor": "ETtoday",
+    "date": "2025-08-28",
+    "action_type": "staffing_ai_restructuring",
+    "label_en": "Sample move 5",
+    "label_zh": "範例行動 5",
+    "responses": [
+      {
+        "responder": "UDN",
+        "date": "2025-11-18",
+        "lag_days": 82
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S006",
+    "actor": "ETtoday",
+    "date": "2025-10-19",
+    "action_type": "regulatory_legal",
+    "label_en": "Sample move 6",
+    "label_zh": "範例行動 6",
+    "responses": [
+      {
+        "responder": "SETN",
+        "date": "2025-12-25",
+        "lag_days": 67
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S007",
+    "actor": "Meta",
+    "date": "2025-12-10",
+    "action_type": "pricing",
+    "label_en": "Sample move 7",
+    "label_zh": "範例行動 7",
+    "responses": [
+      {
+        "responder": "EBC",
+        "date": "2025-12-15",
+        "lag_days": 5
+      },
+      {
+        "responder": "LTN",
+        "date": "2026-01-22",
+        "lag_days": 43
+      },
+      {
+        "responder": "NOWnews",
+        "date": "2026-01-06",
+        "lag_days": 27
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S008",
+    "actor": "ETtoday",
+    "date": "2026-01-31",
+    "action_type": "pricing",
+    "label_en": "Sample move 8",
+    "label_zh": "範例行動 8",
+    "responses": [
+      {
+        "responder": "EBC",
+        "date": "2026-03-17",
+        "lag_days": 45
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S009",
+    "actor": "ETtoday",
+    "date": "2026-03-24",
+    "action_type": "acquisition_investment",
+    "label_en": "Sample move 9",
+    "label_zh": "範例行動 9",
+    "responses": [
+      {
+        "responder": "UDN",
+        "date": "2026-04-22",
+        "lag_days": 29
+      },
+      {
+        "responder": "TVBS",
+        "date": "2026-05-20",
+        "lag_days": 57
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S010",
+    "actor": "Google",
+    "date": "2026-05-15",
+    "action_type": "regulatory_legal",
+    "label_en": "Sample move 10",
+    "label_zh": "範例行動 10",
+    "responses": []
+  },
+  {
+    "action_id": "ACT-S011",
+    "actor": "ETtoday",
+    "date": "2026-07-06",
+    "action_type": "regulatory_legal",
+    "label_en": "Sample move 11",
+    "label_zh": "範例行動 11",
+    "responses": [
+      {
+        "responder": "LTN",
+        "date": "2026-07-15",
+        "lag_days": 9
+      }
+    ]
+  },
+  {
+    "action_id": "ACT-S012",
+    "actor": "ETtoday",
+    "date": "2026-08-27",
+    "action_type": "new_product_format",
+    "label_en": "Sample move 12",
+    "label_zh": "範例行動 12",
+    "responses": []
+  }
+]

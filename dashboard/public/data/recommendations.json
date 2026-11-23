@@ -1,0 +1,227 @@
+[
+  {
+    "rec_id": "REC-001",
+    "platform": "Google",
+    "verdict": "mixed",
+    "lever": "added_value",
+    "action": "Sample action 1: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-001"
+    ],
+    "metric_ids": [
+      "M6"
+    ],
+    "confidence": "strong",
+    "impact": 3,
+    "feasibility": 3,
+    "priority": 27,
+    "horizon": "now",
+    "owner_role": "legal & policy",
+    "kpi": "M6",
+    "target_direction": "rise",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-002",
+    "platform": "Meta",
+    "verdict": "rival",
+    "lever": "scope",
+    "action": "Sample action 2: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-002"
+    ],
+    "metric_ids": [
+      "M6"
+    ],
+    "confidence": "strong",
+    "impact": 2,
+    "feasibility": 3,
+    "priority": 18,
+    "horizon": "next",
+    "owner_role": "ad sales",
+    "kpi": "M6",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-003",
+    "platform": "LINE",
+    "verdict": "partner",
+    "lever": "added_value",
+    "action": "Sample action 3: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-003"
+    ],
+    "metric_ids": [
+      "M6"
+    ],
+    "confidence": "strong",
+    "impact": 3,
+    "feasibility": 1,
+    "priority": 9,
+    "horizon": "later",
+    "owner_role": "audience growth",
+    "kpi": "M6",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-004",
+    "platform": "YouTube",
+    "verdict": "mixed",
+    "lever": "tactics",
+    "action": "Sample action 4: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-004"
+    ],
+    "metric_ids": [
+      "A5"
+    ],
+    "confidence": "strong",
+    "impact": 1,
+    "feasibility": 1,
+    "priority": 3,
+    "horizon": "now",
+    "owner_role": "product",
+    "kpi": "A5",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-005",
+    "platform": "Google",
+    "verdict": "mixed",
+    "lever": "tactics",
+    "action": "Sample action 5: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-005"
+    ],
+    "metric_ids": [
+      "M5"
+    ],
+    "confidence": "moderate",
+    "impact": 1,
+    "feasibility": 3,
+    "priority": 6,
+    "horizon": "next",
+    "owner_role": "ad sales",
+    "kpi": "M5",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-006",
+    "platform": "Meta",
+    "verdict": "rival",
+    "lever": "rules",
+    "action": "Sample action 6: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-006"
+    ],
+    "metric_ids": [
+      "M5"
+    ],
+    "confidence": "strong",
+    "impact": 1,
+    "feasibility": 2,
+    "priority": 6,
+    "horizon": "later",
+    "owner_role": "product",
+    "kpi": "M5",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "rec_id": "REC-007",
+    "platform": "LINE",
+    "verdict": "partner",
+    "lever": "tactics",
+    "action": "Sample action 7: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-007"
+    ],
+    "metric_ids": [
+      "A5"
+    ],
+    "confidence": "moderate",
+    "impact": 1,
+    "feasibility": 3,
+    "priority": 6,
+    "horizon": "now",
+    "owner_role": "ad sales",
+    "kpi": "A5",
+    "target_direction": "rise",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "draft",
+    "approved_by": null
+  },
+  {
+    "rec_id": "REC-008",
+    "platform": "YouTube",
+    "verdict": "mixed",
+    "lever": "scope",
+    "action": "Sample action 8: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-008"
+    ],
+    "metric_ids": [
+      "M6"
+    ],
+    "confidence": "moderate",
+    "impact": 3,
+    "feasibility": 3,
+    "priority": 18,
+    "horizon": "next",
+    "owner_role": "audience growth",
+    "kpi": "M6",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "draft",
+    "approved_by": null
+  },
+  {
+    "rec_id": "REC-009",
+    "platform": "Google",
+    "verdict": "mixed",
+    "lever": "tactics",
+    "action": "Sample action 9: placeholder verb-first recommendation text",
+    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "evidence_ids": [
+      "EV-SAMPLE-009"
+    ],
+    "metric_ids": [
+      "N3"
+    ],
+    "confidence": "strong",
+    "impact": 3,
+    "feasibility": 2,
+    "priority": 18,
+    "horizon": "later",
+    "owner_role": "platform partnerships",
+    "kpi": "N3",
+    "target_direction": "fall",
+    "revisit_trigger": "Placeholder trigger condition",
+    "status": "draft",
+    "approved_by": null
+  }
+]

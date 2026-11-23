@@ -1,0 +1,13 @@
+year,platform,news_reach_pct,momentum_pp,dependence_pct,nei_score,is_estimate,source_ids
+2024,Google,53.4,,10.5,40,true,KPI-S979|KPI-S161
+2024,Meta,34,,12.6,57,true,KPI-S626|KPI-S145
+2024,LINE,35.6,,25.1,20,true,KPI-S568|KPI-S850
+2024,YouTube,42.8,,14.6,51,true,KPI-S266|KPI-S331
+2025,Google,18.1,-35.3,7,53,true,KPI-S372|KPI-S105
+2025,Meta,50.1,16.1,20.3,43,true,KPI-S945|KPI-S886
+2025,LINE,61,25.4,17.9,48,true,KPI-S046|KPI-S281
+2025,YouTube,51.9,9.1,16.8,22,true,KPI-S904|KPI-S858
+2026,Google,60,41.9,21,18,true,KPI-S742|KPI-S024
+2026,Meta,48.1,-2,4.4,84,true,KPI-S885|KPI-S713
+2026,LINE,28.8,-32.2,15,19,true,KPI-S800|KPI-S929
+2026,YouTube,28,-23.9,16.3,16,true,KPI-S199|KPI-S064

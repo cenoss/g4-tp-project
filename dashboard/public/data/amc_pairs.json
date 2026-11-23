@@ -1,0 +1,72 @@
+[
+  {
+    "rival": "NOWnews",
+    "mc": 0.72,
+    "rs": 0.59,
+    "awareness": 0,
+    "motivation": 1,
+    "capability": 1,
+    "likelihood": 0.14,
+    "median_lag_days": 19
+  },
+  {
+    "rival": "TVBS",
+    "mc": 0.57,
+    "rs": 0.47,
+    "awareness": 1,
+    "motivation": 2,
+    "capability": 2,
+    "likelihood": 0.22,
+    "median_lag_days": 41
+  },
+  {
+    "rival": "SETN",
+    "mc": 0.77,
+    "rs": 0.76,
+    "awareness": 1,
+    "motivation": 1,
+    "capability": 2,
+    "likelihood": 0.39,
+    "median_lag_days": 13
+  },
+  {
+    "rival": "EBC",
+    "mc": 0.78,
+    "rs": 0.72,
+    "awareness": 1,
+    "motivation": 2,
+    "capability": 1,
+    "likelihood": 0.37,
+    "median_lag_days": 38
+  },
+  {
+    "rival": "UDN",
+    "mc": 0.9,
+    "rs": 0.62,
+    "awareness": 1,
+    "motivation": 1,
+    "capability": 0,
+    "likelihood": 0.19,
+    "median_lag_days": 27
+  },
+  {
+    "rival": "LTN",
+    "mc": 0.49,
+    "rs": 0.5,
+    "awareness": 1,
+    "motivation": 1,
+    "capability": 0,
+    "likelihood": 0.08,
+    "median_lag_days": 45
+  },
+  {
+    "rival": "CNA",
+    "mc": 0.74,
+    "rs": 0.4,
+    "awareness": 1,
+    "motivation": 0,
+    "capability": 1,
+    "likelihood": 0.1,
+    "median_lag_days": 46
+  }
+]

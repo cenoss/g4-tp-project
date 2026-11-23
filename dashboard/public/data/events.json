@@ -1,0 +1,178 @@
+[
+  {
+    "event_id": "EV-20250129-001",
+    "date": "2025-01-29",
+    "actor": "ETtoday",
+    "action_type": "pricing",
+    "label_zh": "範例事件 1",
+    "label_en": "Sample event 1"
+  },
+  {
+    "event_id": "EV-20250305-002",
+    "date": "2025-03-05",
+    "actor": "SETN",
+    "action_type": "new_product_format",
+    "label_zh": "範例事件 2",
+    "label_en": "Sample event 2"
+  },
+  {
+    "event_id": "EV-20250422-003",
+    "date": "2025-04-22",
+    "actor": "NOWnews",
+    "action_type": "pricing",
+    "label_zh": "範例事件 3",
+    "label_en": "Sample event 3"
+  },
+  {
+    "event_id": "EV-20250601-004",
+    "date": "2025-06-01",
+    "actor": "Meta",
+    "action_type": "promotion",
+    "label_zh": "範例事件 4",
+    "label_en": "Sample event 4"
+  },
+  {
+    "event_id": "EV-20250628-005",
+    "date": "2025-06-28",
+    "actor": "ETtoday",
+    "action_type": "partnership_licensing",
+    "label_zh": "範例事件 5",
+    "label_en": "Sample event 5"
+  },
+  {
+    "event_id": "EV-20250811-006",
+    "date": "2025-08-11",
+    "actor": "NOWnews",
+    "action_type": "pricing",
+    "label_zh": "範例事件 6",
+    "label_en": "Sample event 6"
+  },
+  {
+    "event_id": "EV-20251007-007",
+    "date": "2025-10-07",
+    "actor": "YouTube",
+    "action_type": "staffing_ai_restructuring",
+    "label_zh": "範例事件 7",
+    "label_en": "Sample event 7"
+  },
+  {
+    "event_id": "EV-20251110-008",
+    "date": "2025-11-10",
+    "actor": "Meta",
+    "action_type": "regulatory_legal",
+    "label_zh": "範例事件 8",
+    "label_en": "Sample event 8"
+  },
+  {
+    "event_id": "EV-20251212-009",
+    "date": "2025-12-12",
+    "actor": "ETtoday",
+    "action_type": "staffing_ai_restructuring",
+    "label_zh": "範例事件 9",
+    "label_en": "Sample event 9"
+  },
+  {
+    "event_id": "EV-20260128-010",
+    "date": "2026-01-28",
+    "actor": "ETtoday",
+    "action_type": "regulatory_legal",
+    "label_zh": "範例事件 10",
+    "label_en": "Sample event 10"
+  },
+  {
+    "event_id": "EV-20260302-011",
+    "date": "2026-03-02",
+    "actor": "TVBS",
+    "action_type": "promotion",
+    "label_zh": "範例事件 11",
+    "label_en": "Sample event 11"
+  },
+  {
+    "event_id": "EV-20260417-012",
+    "date": "2026-04-17",
+    "actor": "LINE",
+    "action_type": "partnership_licensing",
+    "label_zh": "範例事件 12",
+    "label_en": "Sample event 12"
+  },
+  {
+    "event_id": "EV-20260522-013",
+    "date": "2026-05-22",
+    "actor": "ETtoday",
+    "action_type": "pricing",
+    "label_zh": "範例事件 13",
+    "label_en": "Sample event 13"
+  },
+  {
+    "event_id": "EV-20260719-014",
+    "date": "2026-07-19",
+    "actor": "Government",
+    "action_type": "promotion",
+    "label_zh": "範例事件 14",
+    "label_en": "Sample event 14"
+  },
+  {
+    "event_id": "EV-20260826-015",
+    "date": "2026-08-26",
+    "actor": "LTN",
+    "action_type": "promotion",
+    "label_zh": "範例事件 15",
+    "label_en": "Sample event 15"
+  },
+  {
+    "event_id": "EV-20260930-016",
+    "date": "2026-09-30",
+    "actor": "EBC",
+    "action_type": "pricing",
+    "label_zh": "範例事件 16",
+    "label_en": "Sample event 16"
+  },
+  {
+    "event_id": "EV-20261020-017",
+    "date": "2026-10-20",
+    "actor": "Government",
+    "action_type": "regulatory_legal",
+    "label_zh": "範例事件 17",
+    "label_en": "Sample event 17"
+  },
+  {
+    "event_id": "EV-20261022-018",
+    "date": "2026-10-22",
+    "actor": "Google",
+    "action_type": "new_product_format",
+    "label_zh": "範例事件 18",
+    "label_en": "Sample event 18"
+  },
+  {
+    "event_id": "EV-20261103-019",
+    "date": "2026-11-03",
+    "actor": "NOWnews",
+    "action_type": "pricing",
+    "label_zh": "範例事件 19",
+    "label_en": "Sample event 19"
+  },
+  {
+    "event_id": "EV-20261105-020",
+    "date": "2026-11-05",
+    "actor": "LINE",
+    "action_type": "partnership_licensing",
+    "label_zh": "範例事件 20",
+    "label_en": "Sample event 20"
+  },
+  {
+    "event_id": "EV-20261111-021",
+    "date": "2026-11-11",
+    "actor": "Meta",
+    "action_type": "promotion",
+    "label_zh": "範例事件 21",
+    "label_en": "Sample event 21"
+  },
+  {
+    "event_id": "EV-20261113-022",
+    "date": "2026-11-13",
+    "actor": "YouTube",
+    "action_type": "new_product_format",
+    "label_zh": "範例事件 22",
+    "label_en": "Sample event 22"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "week": "2026-W43",
+    "period_start": "2026-10-19",
+    "period_end": "2026-10-25",
+    "run_date": "2026-10-26",
+    "headline_en": "Sample headline: placeholder for the week’s most important change.",
+    "headline_zh": "範例標題：本週最重要變化的佔位文字。",
+    "moves": [
+      {
+        "event_id": "EV-20261020-017",
+        "actor": "Government",
+        "platform": null,
+        "criteria": [
+          "S5"
+        ],
+        "relation_signal": "rival",
+        "response": "respond_selectively",
+        "rec_ids": [
+          "REC-006"
+        ]
+      },
+      {
+        "event_id": "EV-20261022-018",
+        "actor": "Google",
+        "platform": "Google",
+        "criteria": [
+          "S1",
+          "S3"
+        ],
+        "relation_signal": "rival",
+        "response": "cooperate_adapt",
+        "rec_ids": [
+          "REC-001",
+          "REC-005"
+        ]
+      }
+    ],
+    "triggers_fired": [
+      {
+        "trigger": "rules",
+        "platform": null,
+        "detail": "EV-20261020-017"
+      }
+    ],
+    "verdict_changes": [],
+    "emi_context": {
+      "week_return_pct": 1.13,
+      "taiex_return_pct": -1.68,
+      "excess_return_pct": 2.81
+    },
+    "watch_next": [
+      {
+        "date": "2026-10-28",
+        "label_en": "Sample scheduled item 1",
+        "label_zh": "範例預定事項 1"
+      },
+      {
+        "date": "2026-10-30",
+        "label_en": "Sample scheduled item 2",
+        "label_zh": "範例預定事項 2"
+      }
+    ],
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "week": "2026-W44",
+    "period_start": "2026-10-26",
+    "period_end": "2026-11-01",
+    "run_date": "2026-11-02",
+    "headline_en": "Sample headline: no change this week.",
+    "headline_zh": "範例標題：本週無變化。",
+    "moves": [],
+    "triggers_fired": [],
+    "verdict_changes": [],
+    "emi_context": {
+      "week_return_pct": -2.5,
+      "taiex_return_pct": -1.15,
+      "excess_return_pct": -1.35
+    },
+    "watch_next": [
+      {
+        "date": "2026-11-04",
+        "label_en": "Sample scheduled item 3",
+        "label_zh": "範例預定事項 3"
+      }
+    ],
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "week": "2026-W45",
+    "period_start": "2026-11-02",
+    "period_end": "2026-11-08",
+    "run_date": "2026-11-09",
+    "headline_en": "Sample headline: placeholder for the week’s most important change.",
+    "headline_zh": "範例標題：本週最重要變化的佔位文字。",
+    "moves": [
+      {
+        "event_id": "EV-20261103-019",
+        "actor": "NOWnews",
+        "platform": null,
+        "criteria": [
+          "S1"
+        ],
+        "relation_signal": "rival",
+        "response": "respond_fast",
+        "rec_ids": [
+          "REC-004"
+        ]
+      },
+      {
+        "event_id": "EV-20261105-020",
+        "actor": "LINE",
+        "platform": "LINE",
+        "criteria": [
+          "S2",
+          "S4"
+        ],
+        "relation_signal": "partner",
+        "response": "monitor",
+        "rec_ids": []
+      }
+    ],
+    "triggers_fired": [],
+    "verdict_changes": [],
+    "emi_context": {
+      "week_return_pct": -2.75,
+      "taiex_return_pct": 3.56,
+      "excess_return_pct": -6.31
+    },
+    "watch_next": [
+      {
+        "date": "2026-11-11",
+        "label_en": "Sample scheduled item 5",
+        "label_zh": "範例預定事項 5"
+      },
+      {
+        "date": "2026-11-13",
+        "label_en": "Sample scheduled item 6",
+        "label_zh": "範例預定事項 6"
+      }
+    ],
+    "status": "approved",
+    "approved_by": "Reviewer (sample)"
+  },
+  {
+    "week": "2026-W46",
+    "period_start": "2026-11-09",
+    "period_end": "2026-11-15",
+    "run_date": "2026-11-16",
+    "headline_en": null,
+    "headline_zh": null,
+    "moves": [
+      {
+        "event_id": "EV-20261111-021",
+        "actor": "Meta",
+        "platform": "Meta",
+        "criteria": [
+          "S3"
+        ],
+        "relation_signal": "rival",
+        "response": "respond_fast",
+        "rec_ids": [
+          "REC-002"
+        ]
+      },
+      {
+        "event_id": "EV-20261113-022",
+        "actor": "YouTube",
+        "platform": "YouTube",
+        "criteria": [
+          "S1",
+          "S2"
+        ],
+        "relation_signal": "partner",
+        "response": "respond_selectively",
+        "rec_ids": [
+          "REC-008"
+        ]
+      }
+    ],
+    "triggers_fired": [
+      {
+        "trigger": "verdict",
+        "platform": "Google",
+        "detail": "Google: rival → mixed"
+      }
+    ],
+    "verdict_changes": [
+      {
+        "platform": "Google",
+        "verdict_from": "rival",
+        "verdict_to": "mixed",
+        "n_from": -2,
+        "n_to": -1
+      }
+    ],
+    "emi_context": {
+      "week_return_pct": 2.32,
+      "taiex_return_pct": 0.11,
+      "excess_return_pct": 2.21
+    },
+    "watch_next": [
+      {
+        "date": "2026-11-18",
+        "label_en": "Sample scheduled item 7",
+        "label_zh": "範例預定事項 7"
+      },
+      {
+        "date": "2026-11-20",
+        "label_en": "Sample scheduled item 8",
+        "label_zh": "範例預定事項 8"
+      }
+    ],
+    "status": "draft",
+    "approved_by": null
+  }
+]

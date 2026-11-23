@@ -1,0 +1,13 @@
+year,segment,revenue_ntd_m,share_pct,is_estimate,source_ids
+2024,new_media,5819,21.9,false,KPI-S681
+2024,new_retail,16908,63.6,false,KPI-S004
+2024,warehousing_logistics,3257,12.2,false,KPI-S504
+2024,other,621,2.3,false,KPI-S181
+2025,new_media,5932,24.3,false,KPI-S737
+2025,new_retail,14833,60.7,false,KPI-S881
+2025,warehousing_logistics,2761,11.3,false,KPI-S530
+2025,other,899,3.7,false,KPI-S393
+2026,new_media,5315,20.5,true,KPI-S696
+2026,new_retail,16544,63.9,true,KPI-S027
+2026,warehousing_logistics,3216,12.4,true,KPI-S967
+2026,other,831,3.2,true,KPI-S278

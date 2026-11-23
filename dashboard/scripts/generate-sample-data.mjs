@@ -236,7 +236,7 @@ files['action_response.json'] = [
         b, c, f, n,
         verdict: n >= 2 ? 'partner' : n <= -2 ? 'rival' : 'mixed',
         confidence,
-        scored_by: 'Strategy pair (H3)',
+        scored_by: 'Strategy pair',
         scored_date: date,
       });
     }
@@ -295,7 +295,7 @@ files['action_response.json'] = [
     target_direction,
     revisit_trigger,
     status: i < 6 ? 'approved' : 'draft',
-    approved_by: i < 6 ? 'H4 review pair' : null,
+    approved_by: i < 6 ? 'Review pair' : null,
   }));
 }
 
@@ -348,7 +348,7 @@ files['action_response.json'] = [
       ],
       watch_next: [
         ['2026-11-11', 'YouTube Taiwan news partner briefing', 'YouTube 台灣新聞夥伴說明會'],
-        ['2026-11-14', 'Quarterly H3 re-scoring of all four platforms', '四大平台季度 H3 重新評分'],
+        ['2026-11-14', 'Quarterly re-scoring of all four platforms', '四大平台季度重新評分'],
       ],
     },
     {
@@ -358,7 +358,7 @@ files['action_response.json'] = [
         move(shortsShelf, 'YouTube', ['S1', 'S2'], 'partner', 'respond_selectively', ['REC-008']),
       ],
       watch_next: [
-        ['2026-11-18', 'Strategy pair re-reviews Google at H3 after the verdict change', '判定變更後，策略小組於 H3 重新檢視 Google'],
+        ['2026-11-18', 'Strategy pair re-reviews Google after the verdict change', '判定變更後，策略小組重新檢視 Google'],
         ['2026-11-20', 'NCC consultation on platform news distribution closes', 'NCC 平台新聞分發規範諮詢截止'],
       ],
     },
@@ -402,7 +402,7 @@ files['action_response.json'] = [
       emi_context: { week_return_pct: emi, taiex_return_pct: taiex, excess_return_pct: emi != null && taiex != null ? r2(emi - taiex) : null },
       watch_next: watch_next.map(([date, label_en, label_zh]) => ({ date, label_en, label_zh })),
       status: approved ? 'approved' : 'draft',
-      approved_by: approved ? 'H4 review pair' : null,
+      approved_by: approved ? 'Review pair' : null,
     };
   });
 }

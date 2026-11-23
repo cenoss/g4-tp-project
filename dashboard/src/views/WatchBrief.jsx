@@ -3,7 +3,7 @@ import { AlertTriangle, ArrowRight, ChevronLeft, ChevronRight, CircleAlert, Circ
 import { useI18n } from '../lib/i18n.jsx';
 import { useDash } from '../lib/dash.js';
 import { PLATFORM_ORDER, diffRecords, evaluateTriggers, firedTriggers, topActionsByHorizon, verdictChanges, verdictShift } from '../lib/metrics.js';
-import { CardFoot, Disclaimer, VerdictBadge, fmt } from '../components/ui.jsx';
+import { CardFoot, Disclaimer, VerdictBadge, fmt, plainSource } from '../components/ui.jsx';
 
 // PRD §5.7 Weekly Platform Watch Brief: one brief at a time, seven blocks, plus the archive.
 // Triggers and verdict changes are re-checked with the §5.6 / §2.3 logic in metrics.js; stored values that
@@ -118,7 +118,7 @@ function WeekSelector({ briefs, idx }) {
 }
 
 function Headline({ brief, error }) {
-  const { t, pickLabel } = useI18n();
+  const { t, pickLabel, detail } = useI18n();
   const { isSample } = useDash();
   if (error) {
     return <Panel id="watch-headline" title={t('headline')} source={FILE} error={FILE} reason={error} />;
@@ -138,13 +138,13 @@ function Headline({ brief, error }) {
         <div><span>{t('runDate')}</span><span className="tnum">{brief.run_date}</span></div>
         <div><span>{t('status')}</span><span>{t(brief.status)}{brief.approved_by ? ` · ${brief.approved_by}` : ''}</span></div>
       </div>
-      <p className="note">{t('source')}: {FILE} · {t('headlineSource')} · {t('asOf')}: <span className="tnum">{brief.run_date}</span></p>
+      <p className="note">{t('source')}: {detail ? FILE : plainSource(FILE, t)} · {t('headlineSource')} · {t('asOf')}: <span className="tnum">{brief.run_date}</span></p>
     </section>
   );
 }
 
 function Moves({ brief, error: fileError }) {
-  const { t, pickLabel } = useI18n();
+  const { t, pickLabel, detail } = useI18n();
   const { data, errors } = useDash();
   const { error, reason } = firstError(errors, fileError, ['events.json']);
   const evById = new Map((data.events ?? []).map((e) => [e.event_id, e]));
@@ -163,13 +163,13 @@ function Moves({ brief, error: fileError }) {
                 <div className="watch-body">
                   <span className="watch-title">
                     {m.actor}{m.platform && m.platform !== m.actor ? ` · ${m.platform}` : ''}{ev ? ` · ${pickLabel(ev)}` : ''}
-                    <span className="tag mono" style={{ marginLeft: 6 }}>{m.event_id}</span>
+                    {detail && <span className="tag mono" style={{ marginLeft: 6 }}>{m.event_id}</span>}
                   </span>
                   {ev && <span className="muted" style={{ fontSize: 12 }}>{t(`at_${ev.action_type}`)}</span>}
                   <div className="action-meta" style={{ alignItems: 'center' }}>
-                    <span className="muted" style={{ fontSize: 12 }}>{t('criteria')}:</span>
-                    {m.criteria.map((c) => <span key={c} className="tag mono">{c}</span>)}
-                    <span className="muted" style={{ fontSize: 12, marginLeft: 6 }}>{t('signal')}:</span>
+                    {detail && <span className="muted" style={{ fontSize: 12 }}>{t('criteria')}:</span>}
+                    {detail && m.criteria.map((c) => <span key={c} className="tag mono">{c}</span>)}
+                    <span className="muted" style={{ fontSize: 12, marginLeft: detail ? 6 : 0 }}>{t('signal')}:</span>
                     <VerdictBadge verdict={m.relation_signal} />
                   </div>
                   {!ev && <Alert>{t('eventMissing', { id: m.event_id })}</Alert>}
@@ -185,7 +185,7 @@ function Moves({ brief, error: fileError }) {
 }
 
 function VerdictStatus({ brief, error: fileError }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { data, errors } = useDash();
   const { error, reason } = firstError(errors, fileError, ['decision_scores.json']);
   const shift = useMemo(() => {
@@ -212,7 +212,7 @@ function VerdictStatus({ brief, error: fileError }) {
               {p ? (
                 <>
                   <VerdictBadge verdict={p.current.verdict} />
-                  <span className="tnum" style={{ fontWeight: 600 }}>N {fmt.signed(p.current.n)}</span>
+                  <span className="tnum" style={{ fontWeight: 600 }}>{detail ? 'N' : t('netScore')} {fmt.signed(p.current.n)}</span>
                   <span className="verdict-change">
                     {p.changed
                       ? <span className="flag-inline"><Flag size={12} aria-hidden /> {t('changed')}: {t(p.before.verdict)} → {t(p.current.verdict)} ({fmt.signed(p.before.n)} → {fmt.signed(p.current.n)})</span>
@@ -233,7 +233,7 @@ function VerdictStatus({ brief, error: fileError }) {
 }
 
 function TriggersFired({ brief, error: fileError }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { data } = useDash();
   const results = useMemo(
     () => (brief ? evaluateTriggers(data, brief.run_date, { from: brief.period_start, to: brief.period_end }) : []),
@@ -264,7 +264,7 @@ function TriggersFired({ brief, error: fileError }) {
                   {scope(x) && <span className="tag">{scope(x)}</span>}
                   <span className="status-text fired">{t('fired')}</span>
                 </div>
-                {x.detail && <div className="trigger-detail mono">{x.detail}</div>}
+                {detail && x.detail && <div className="trigger-detail mono">{x.detail}</div>}
               </div>
             </li>
           ))}
@@ -273,7 +273,7 @@ function TriggersFired({ brief, error: fileError }) {
       {(diff.missing.length > 0 || diff.extra.length > 0) && (
         <Alert>{t('triggerMismatch', { computed: computed.map(label).join('; ') || t('none'), stored: compared.map(label).join('; ') || t('none') })}</Alert>
       )}
-      {notChecked.length > 0 && (
+      {detail && notChecked.length > 0 && (
         <p className="muted" style={{ fontSize: 12 }}>
           {t('notChecked', { list: notChecked.map((r) => `${t(`trig_${r.id}`)} (${r.status === 'annual' ? t('annualNote') : t('unavailable')})`).join('; ') })}
         </p>
@@ -283,7 +283,7 @@ function TriggersFired({ brief, error: fileError }) {
 }
 
 function Responses({ brief, error: fileError }) {
-  const { t, pickLabel } = useI18n();
+  const { t, pickLabel, detail } = useI18n();
   const { data, errors } = useDash();
   const { error, reason } = firstError(errors, fileError, ['recommendations.json']);
   const recs = data.recommendations ?? [];
@@ -304,7 +304,7 @@ function Responses({ brief, error: fileError }) {
             return (
               <div className="response-item" key={m.event_id}>
                 <span className="muted" style={{ fontSize: 12 }}>
-                  {m.actor}{ev ? ` · ${pickLabel(ev)}` : ''} <span className="mono">{m.event_id}</span>
+                  {m.actor}{ev ? ` · ${pickLabel(ev)}` : ''} {detail && <span className="mono">{m.event_id}</span>}
                 </span>
                 {m.rec_ids.length === 0 && <span className="muted" style={{ fontSize: 12 }}>{t('noCard')}</span>}
                 {m.rec_ids.map((id) => {
@@ -313,9 +313,9 @@ function Responses({ brief, error: fileError }) {
                   return (
                     <article className="action-card" data-verdict={r.verdict} key={id}>
                       <div className="action-meta">
-                        <span className="tag mono">{r.rec_id}</span>
+                        {detail && <span className="tag mono">{r.rec_id}</span>}
                         <span className="tag">{r.platform}</span>
-                        <span className="tag">{t('lever')}: {t(`lever_${r.lever}`)}</span>
+                        {detail && <span className="tag">{t('lever')}: {t(`lever_${r.lever}`)}</span>}
                         {r.status !== 'approved' && <span className="tag draft">{t('draft')}</span>}
                       </div>
                       <p className="action-text">{r.action}</p>

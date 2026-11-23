@@ -16,7 +16,7 @@ export const PLATFORM_SLOT = { Google: 'series-1', Meta: 'series-2', LINE: 'seri
  * Four hues fail the all-pairs CVD floor, so every bubble is also direct-labelled (secondary encoding).
  */
 export function C5Quadrant({ year }) {
-  const { t } = useI18n();
+  const { t, codeTag } = useI18n();
   const { data, errors, tokens: tk } = useDash();
   const rows = (data.network_effects ?? []).filter((r) => r.year === year);
 
@@ -38,7 +38,7 @@ export function C5Quadrant({ year }) {
       error={errors.network_effects && 'network_effects.csv'} empty={!rows.length} height={320}
       legend={<>
         {rows.map((r) => <LegendItem key={r.platform} kind="dot" color={tk[PLATFORM_SLOT[r.platform]]}>{r.platform}</LegendItem>)}
-        <span className="legend-item muted">○ {t('nei')} (N6)</span>
+        <span className="legend-item muted">○ {t('nei')}{codeTag('N6')}</span>
       </>}
       table={{
         columns: [
@@ -100,7 +100,7 @@ const CHANNELS = ['direct', 'app', 'search', 'social', 'other'];
 
 /** C6 — ETtoday traffic mix. Owned channels (direct, app) in blue; platform channels in neutrals. */
 export function C6TrafficMix() {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { data, errors, tokens: tk } = useDash();
   const raw = data.traffic_mix ?? [];
   const colors = { direct: tk['owned-1'], app: tk['owned-2'], search: tk['neutral-1'], social: tk['neutral-2'], other: tk['neutral-3'] };
@@ -150,7 +150,7 @@ export function C6TrafficMix() {
               maxBarSize={24} radius={i === CHANNELS.length - 1 ? [0, 4, 4, 0] : 0} isAnimationActive={false}>
               {i === CHANNELS.length - 1 && (
                 <LabelList position="right" fill={tk['ink-2']} fontSize={11}
-                  valueAccessor={(entry) => `N4 ${fmt.num(entry.payload?.owned_total ?? entry.owned_total, 0)}%`} />
+                  valueAccessor={(entry) => `${detail ? 'N4 ' : ''}${fmt.num(entry.payload?.owned_total ?? entry.owned_total, 0)}%`} />
               )}
             </Bar>
           ))}

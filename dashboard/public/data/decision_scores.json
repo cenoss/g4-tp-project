@@ -14,7 +14,7 @@
     "n": -2,
     "verdict": "rival",
     "confidence": "moderate",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-08-14"
   },
   {
@@ -32,7 +32,7 @@
     "n": -3,
     "verdict": "rival",
     "confidence": "strong",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-08-14"
   },
   {
@@ -50,7 +50,7 @@
     "n": 3,
     "verdict": "partner",
     "confidence": "moderate",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-08-14"
   },
   {
@@ -68,7 +68,7 @@
     "n": 0,
     "verdict": "mixed",
     "confidence": "moderate",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-08-14"
   },
   {
@@ -86,7 +86,7 @@
     "n": -1,
     "verdict": "mixed",
     "confidence": "moderate",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-11-14"
   },
   {
@@ -104,7 +104,7 @@
     "n": -3,
     "verdict": "rival",
     "confidence": "strong",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-11-14"
   },
   {
@@ -122,7 +122,7 @@
     "n": 3,
     "verdict": "partner",
     "confidence": "strong",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-11-14"
   },
   {
@@ -140,7 +140,7 @@
     "n": 1,
     "verdict": "mixed",
     "confidence": "moderate",
-    "scored_by": "Strategy pair (H3)",
+    "scored_by": "Strategy pair",
     "scored_date": "2026-11-14"
   }
 ]

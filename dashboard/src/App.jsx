@@ -27,7 +27,7 @@ function useHashRoute() {
 }
 
 function Shell() {
-  const { t, lang, setLang } = useI18n();
+  const { t, lang, setLang, detail, setDetail } = useI18n();
   // Theme effect is declared before token reading so tokens resolve against the new theme.
   const [theme, setTheme] = useTheme();
   const tokens = useChartTokens(theme);
@@ -95,6 +95,10 @@ function Shell() {
               </span>
             )}
             <span className="topbar-spacer" />
+            <div className="segmented" role="group" aria-label={t('modeLabel')}>
+              <button type="button" aria-pressed={!detail} onClick={() => setDetail(false)}>{t('modeSummary')}</button>
+              <button type="button" aria-pressed={detail} onClick={() => setDetail(true)}>{t('modeDetail')}</button>
+            </div>
             <div className="segmented" role="group" aria-label={t('language')}>
               <Languages size={14} aria-hidden style={{ margin: '0 4px 0 6px', alignSelf: 'center', color: 'var(--muted)' }} />
               <button type="button" aria-pressed={lang === 'zh'} onClick={() => setLang('zh')}>中</button>

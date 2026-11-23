@@ -57,7 +57,7 @@
       }
     ],
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "week": "2026-W44",
@@ -82,7 +82,7 @@
       }
     ],
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "week": "2026-W45",
@@ -133,12 +133,12 @@
       },
       {
         "date": "2026-11-14",
-        "label_en": "Quarterly H3 re-scoring of all four platforms",
-        "label_zh": "四大平台季度 H3 重新評分"
+        "label_en": "Quarterly re-scoring of all four platforms",
+        "label_zh": "四大平台季度重新評分"
       }
     ],
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "week": "2026-W46",
@@ -200,8 +200,8 @@
     "watch_next": [
       {
         "date": "2026-11-18",
-        "label_en": "Strategy pair re-reviews Google at H3 after the verdict change",
-        "label_zh": "判定變更後，策略小組於 H3 重新檢視 Google"
+        "label_en": "Strategy pair re-reviews Google after the verdict change",
+        "label_zh": "判定變更後，策略小組重新檢視 Google"
       },
       {
         "date": "2026-11-20",

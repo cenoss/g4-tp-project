@@ -23,7 +23,7 @@
     "target_direction": "rise",
     "revisit_trigger": "Search share of ETtoday traffic falls 3 pp or more in a quarter",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-002",
@@ -48,7 +48,7 @@
     "target_direction": "fall",
     "revisit_trigger": "Meta restores news-link weight in feed ranking",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-003",
@@ -75,7 +75,7 @@
     "target_direction": "rise",
     "revisit_trigger": "LINE TODAY changes partner revenue share again",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-004",
@@ -100,7 +100,7 @@
     "target_direction": "rise",
     "revisit_trigger": "A close rival matches the package within its median lag",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-005",
@@ -126,7 +126,7 @@
     "target_direction": "rise",
     "revisit_trigger": "Owned ratio (N4) stops rising for two quarters",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-006",
@@ -152,7 +152,7 @@
     "target_direction": "fall",
     "revisit_trigger": "The draft bargaining bill passes committee review or is withdrawn",
     "status": "approved",
-    "approved_by": "H4 review pair"
+    "approved_by": "Review pair"
   },
   {
     "rec_id": "REC-007",

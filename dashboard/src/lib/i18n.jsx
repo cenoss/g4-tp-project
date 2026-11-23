@@ -246,6 +246,74 @@ const DICT = {
     lever_rules: 'Rules',
     lever_tactics: 'Tactics',
     lever_scope: 'Scope',
+
+    // Reading mode. `key.summary` entries replace `key` in Summary mode (plain language for management);
+    // Detail mode shows the original wording with formulas, metric codes and record IDs.
+    modeLabel: 'Reading mode',
+    modeSummary: 'Summary',
+    modeDetail: 'Detail',
+    howScoreWorks: 'How the score works',
+    howScoreWorksBody: 'Each platform is scored 0–2 on seven criteria every quarter. Reasons to work together add points, competitive pressure counts double against, and the strength of ETtoday’s own channels adjusts the total. +2 or more means partner, −2 or less means rival, anything in between is mixed.',
+    formula: 'Formula',
+    netScore: 'Net score',
+    priority_high: 'High',
+    priority_medium: 'Medium',
+    priority_low: 'Low',
+    goalRise: 'Goal: raise {metric}',
+    goalFall: 'Goal: lower {metric}',
+    metric_N1: 'platform news reach',
+    metric_N3: 'reliance on the platform',
+    metric_N4: 'share of readers on ETtoday’s own channels',
+    metric_M3: 'share-price reaction to events',
+    metric_M4: 'new media share of EMI revenue',
+    metric_M5: 'audience share',
+    metric_M6: 'share of the digital ad market',
+    metric_A5: 'rival response time',
+    src_emi_stock_daily: 'EMI share price',
+    src_emi_segments: 'EMI segment revenue',
+    src_market_share: 'Audience and ad share surveys',
+    src_network_effects: 'Platform reach and reliance',
+    src_traffic_mix: 'ETtoday traffic mix',
+    src_amc_pairs: 'Rival assessment',
+    src_action_response: 'Move and response log',
+    src_decision_scores: 'Platform scoring (strategy team)',
+    src_events: 'Verified events',
+    src_recommendations: 'Action cards',
+    src_watch_briefs: 'Weekly watch brief',
+    'snapshotHint.summary': 'applies to the audience and platform charts',
+    'headlinePending.summary': 'Summary of the current verdicts. The final headline is approved at management review.',
+    'verdictBoardSub.summary': 'Should ETtoday partner with or compete against each platform? A score of +2 or more means partner, −2 or less means rival, in between is mixed.',
+    'integrity.summary': 'This score does not match the scoring rule. Check it before presenting.',
+    'topActionsSub.summary': 'Approved actions, most important first. At most three per time frame.',
+    'draftsPending.summary': '{n} draft actions awaiting approval',
+    'competitiveWatchSub.summary': 'Recent moves, and how quickly rivals answered compared with their usual response time.',
+    'risksTriggersSub.summary': 'Conditions that would change the recommendations. Checked every week.',
+    'mediaWeight.summary': 'New media share of EMI revenue',
+    'largestReaction.summary': 'Largest share-price reaction to an ETtoday move',
+    'trig_verdict_rule.summary': 'A platform moves between partner, mixed and rival',
+    'trig_dependence_rule.summary': 'ETtoday’s reliance on a platform moves 5 points or more in a year',
+    'trig_rival_rule.summary': 'A rival answers faster than its usual response time',
+    'headlinePlaceholder.summary': 'Headline pending management approval.',
+    'headlineSource.summary': 'Strategy team, approved at management review',
+    'movesSub.summary': 'Each verified move this week, and whether it signals partnership or rivalry.',
+    'verdictStatusSub.summary': 'Each platform’s verdict and score at the end of the week, compared with the last brief.',
+    'verdictMismatch.summary': 'The stored verdict changes do not match the platform scores. Check before presenting.',
+    'triggersFiredSub.summary': 'Conditions that reopen a recommendation, checked against this week’s data.',
+    'triggerMismatch.summary': 'The stored triggers do not match the rule check. Check before presenting.',
+    'responsesSub.summary': 'The recommended response to each move, with the action behind it.',
+    'analyticsSub.summary': 'Eight charts, one per question. Switch to Detail to see the record behind every point.',
+    'adShareCeiling.summary': 'Ad market share (upper estimate)',
+    'adShareNote.summary': 'The upper line overstates the share: the segment also includes offline media and non-ad income.',
+    'newsReach.summary': 'Platform news reach',
+    'dependence.summary': 'ETtoday’s reliance on the platform',
+    'nei.summary': 'Network-effect strength',
+    'ownedRatio.summary': 'Readers on ETtoday’s own channels',
+    'commonality.summary': 'Market overlap with ETtoday',
+    'similarity.summary': 'Resource similarity to ETtoday',
+    'likelihood.summary': 'Likelihood of responding',
+    'likelyResponder.summary': 'Likely to respond',
+    'unlikelyResponder.summary': 'Unlikely to respond',
+    'medianLag.summary': 'Usual response time',
   },
   zh: {
     appName: '平台策略',
@@ -488,34 +556,114 @@ const DICT = {
     lever_rules: '規則',
     lever_tactics: '戰術',
     lever_scope: '範疇',
+
+    modeLabel: '檢視模式',
+    modeSummary: '摘要',
+    modeDetail: '詳細',
+    howScoreWorks: '評分方式',
+    howScoreWorksBody: '每季依七項準則為各平台評 0–2 分。合作理由加分，競爭壓力以兩倍扣分，ETtoday 自有通路的強弱再調整總分。總分 +2 以上為合作，−2 以下為對手，其間為混合。',
+    formula: '公式',
+    netScore: '淨分數',
+    priority_high: '高',
+    priority_medium: '中',
+    priority_low: '低',
+    goalRise: '目標：提升{metric}',
+    goalFall: '目標：降低{metric}',
+    metric_N1: '平台新聞觸及率',
+    metric_N3: '對平台的依賴度',
+    metric_N4: '自有通路讀者占比',
+    metric_M3: '事件股價反應',
+    metric_M4: '新媒體營收占比',
+    metric_M5: '受眾占比',
+    metric_M6: '數位廣告市占',
+    metric_A5: '對手回應時間',
+    src_emi_stock_daily: '東森國際股價',
+    src_emi_segments: '東森國際各事業營收',
+    src_market_share: '受眾與廣告市占調查',
+    src_network_effects: '平台觸及與依賴度',
+    src_traffic_mix: 'ETtoday 流量結構',
+    src_amc_pairs: '對手評估',
+    src_action_response: '行動與回應紀錄',
+    src_decision_scores: '平台評分（策略小組）',
+    src_events: '已驗證事件',
+    src_recommendations: '行動卡',
+    src_watch_briefs: '每週觀察簡報',
+    'snapshotHint.summary': '適用於受眾與平台圖表',
+    'headlinePending.summary': '依目前判定彙整；正式結論於管理層審查時核准。',
+    'verdictBoardSub.summary': 'ETtoday 應與各平台合作還是競爭？分數 +2 以上為合作，−2 以下為對手，其間為混合。',
+    'integrity.summary': '此分數與評分規則不符，簡報前請先確認。',
+    'topActionsSub.summary': '已核准的行動，依重要性排序；每個時程最多三項。',
+    'draftsPending.summary': '{n} 項草稿行動待核准',
+    'competitiveWatchSub.summary': '近期行動，以及對手的回應速度與其平常回應時間的比較。',
+    'risksTriggersSub.summary': '可能改變建議的條件，每週檢查。',
+    'mediaWeight.summary': '新媒體占東森國際營收比重',
+    'largestReaction.summary': 'ETtoday 行動引發的最大股價反應',
+    'trig_verdict_rule.summary': '平台在合作、混合與對手之間移動',
+    'trig_dependence_rule.summary': 'ETtoday 對某平台的依賴度一年內變動 5 個百分點以上',
+    'trig_rival_rule.summary': '對手的回應快於其平常回應時間',
+    'headlinePlaceholder.summary': '核心結論待管理層核准。',
+    'headlineSource.summary': '策略小組撰寫，經管理層審查核准',
+    'movesSub.summary': '本週每項已驗證動態，以及其代表合作或競爭的訊號。',
+    'verdictStatusSub.summary': '各平台於本週結束時的判定與分數，並與上一期簡報比較。',
+    'verdictMismatch.summary': '儲存的判定變更與平台評分不符，簡報前請先確認。',
+    'triggersFiredSub.summary': '會重新檢視建議的條件，以本週資料檢查。',
+    'triggerMismatch.summary': '儲存的觸發條件與規則檢查不符，簡報前請先確認。',
+    'responsesSub.summary': '每項動態的建議回應，以及對應的行動。',
+    'analyticsSub.summary': '八張圖表，各回答一個問題。切換至「詳細」可查看每個資料點的紀錄。',
+    'adShareCeiling.summary': '廣告市占（上限估計）',
+    'adShareNote.summary': '上限線會高估市占：該事業群亦含戶外媒體與非廣告收入。',
+    'newsReach.summary': '平台新聞觸及率',
+    'dependence.summary': 'ETtoday 對平台的依賴度',
+    'nei.summary': '網路效應強度',
+    'ownedRatio.summary': '自有通路讀者占比',
+    'commonality.summary': '與 ETtoday 的市場重疊度',
+    'similarity.summary': '與 ETtoday 的資源相似度',
+    'likelihood.summary': '回應可能性',
+    'likelyResponder.summary': '可能回應',
+    'unlikelyResponder.summary': '不太可能回應',
+    'medianLag.summary': '平常回應時間',
   },
 };
 
 const I18nContext = createContext(null);
 const STORAGE_KEY = 'psd.lang';
+const MODE_KEY = 'psd.mode';
 
-const readStored = () => {
-  try { return localStorage.getItem(STORAGE_KEY); } catch { return null; }
+const readStored = (key = STORAGE_KEY) => {
+  try { return localStorage.getItem(key); } catch { return null; }
 };
 
+/**
+ * Language plus reading mode. Summary (the default) is plain language for management meetings;
+ * Detail is the analyst/audit view with formulas, metric codes, record IDs and file names.
+ * In summary mode `t(key)` prefers a `key.summary` entry, so plain wording lives in DICT next to the original.
+ */
 export function I18nProvider({ children }) {
   const [lang, setLang] = useState(() => readStored() ?? 'zh');
+  const [detail, setDetail] = useState(() => readStored(MODE_KEY) === 'detail');
 
   useEffect(() => {
     document.documentElement.lang = lang === 'zh' ? 'zh-Hant-TW' : 'en';
     try { localStorage.setItem(STORAGE_KEY, lang); } catch { /* storage unavailable */ }
   }, [lang]);
 
+  useEffect(() => {
+    try { localStorage.setItem(MODE_KEY, detail ? 'detail' : 'summary'); } catch { /* storage unavailable */ }
+  }, [detail]);
+
   const value = useMemo(() => {
     const t = (key, vars) => {
-      let s = DICT[lang][key] ?? DICT.en[key] ?? key;
+      const sk = `${key}.summary`;
+      let s = (detail ? undefined : DICT[lang][sk]) ?? DICT[lang][key] ?? (detail ? undefined : DICT.en[sk]) ?? DICT.en[key] ?? key;
       if (vars) for (const [k, v] of Object.entries(vars)) s = s.replace(`{${k}}`, v);
       return s;
     };
     // Pick the localized field of a record, e.g. pickLabel(ev) → ev.label_zh or ev.label_en.
     const pickLabel = (row, base = 'label') => row[`${base}_${lang}`] ?? row[`${base}_en`];
-    return { lang, setLang, t, pickLabel };
-  }, [lang]);
+    // A metric code suffix such as " (M3)", shown only in Detail mode.
+    const codeTag = (code) => (detail ? ` (${code})` : '');
+    return { lang, setLang, detail, setDetail, t, pickLabel, codeTag };
+  }, [lang, detail]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

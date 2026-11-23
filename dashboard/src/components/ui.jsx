@@ -15,7 +15,7 @@ export const fmt = {
  * estimates, and is bilingual. The table toggle is the accessible fallback for every chart.
  */
 export function ChartCard({ id, title, question, source, asOf, estimate, indicative, ids, legend, note, table, error, empty, height = 280, className = '', children }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const [view, setView] = useState('chart');
 
   let body;
@@ -31,7 +31,7 @@ export function ChartCard({ id, title, question, source, asOf, estimate, indicat
   return (
     <section className={`card ${className}`} aria-labelledby={`${id}-title`}>
       <header className="card-head">
-        <span className="id-badge">{id}</span>
+        {detail && <span className="id-badge">{id}</span>}
         <div className="card-head-text">
           <h3 id={`${id}-title`}>{title}</h3>
           <p className="q">{question}</p>
@@ -51,18 +51,35 @@ export function ChartCard({ id, title, question, source, asOf, estimate, indicat
   );
 }
 
-/** Source line, as-of date and SAMPLE / estimate tags shared by every card. */
+/**
+ * Summary-mode source line: data files become plain names, PRD references and review-gate codes
+ * (H3/H4) are dropped, external sources (TWSE, MOPS, Reuters DNR) are kept.
+ */
+export function plainSource(source, t) {
+  const parts = source.split(' · ').flatMap((part) => {
+    const file = part.match(/^([a-z_\d]+)\.(json|csv)$/);
+    if (file) {
+      const key = `src_${file[1]}`;
+      const name = t(key);
+      return [name === key ? part : name];
+    }
+    return /^PRD\b/.test(part) || /^H[34]$/.test(part) ? [] : [part];
+  });
+  return [...new Set(parts)].join(' · ');
+}
+
+/** Source line, as-of date and SAMPLE / estimate tags shared by every card. Record IDs show in Detail mode only. */
 export function CardFoot({ source, asOf, estimate, indicative, ids }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { isSample } = useDash();
   return (
     <footer className="card-foot">
-      <span>{t('source')}: {source}</span>
+      <span>{t('source')}: {detail ? source : plainSource(source, t)}</span>
       {asOf && <span>{t('asOf')}: <span className="tnum">{asOf}</span></span>}
       {isSample && <span className="tag estimate">{t('sample')}</span>}
       {estimate && <span className="tag estimate">{t('estimate')}</span>}
       {indicative && <span className="tag">{t('indicative')}</span>}
-      {ids && <span className="ids mono" title="Verified record IDs">{ids}</span>}
+      {detail && ids && <span className="ids mono" title="Verified record IDs">{ids}</span>}
     </footer>
   );
 }

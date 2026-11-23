@@ -3,12 +3,12 @@ import { Bar, BarChart, Cell, LabelList, ReferenceArea, ReferenceLine, Responsiv
 import { AlertTriangle, CalendarRange, CircleAlert, CircleCheck, CircleDashed, Flag, History } from 'lucide-react';
 import { useI18n } from '../lib/i18n.jsx';
 import { useDash } from '../lib/dash.js';
-import { HORIZONS, PLATFORM_ORDER, decisionBoard, evaluateTriggers, excessReturns, topActionsByHorizon } from '../lib/metrics.js';
+import { HORIZONS, PLATFORM_ORDER, decisionBoard, evaluateTriggers, excessReturns, priorityLevel, topActionsByHorizon } from '../lib/metrics.js';
 import { ChartCard, ConfidenceBadge, Delta, Disclaimer, VerdictBadge, fmt } from '../components/ui.jsx';
 import { axisProps } from '../charts/common.js';
 
 export default function ExecutiveBrief() {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { data, errors, manifest } = useDash();
 
   const board = useMemo(
@@ -37,6 +37,13 @@ export default function ExecutiveBrief() {
             {board.map((p) => <VerdictCard key={p.platform} p={p} />)}
           </div>
         )}
+        {!detail && (
+          <details className="how-score">
+            <summary>{t('howScoreWorks')}</summary>
+            <p>{t('howScoreWorksBody')}</p>
+            <p className="muted">{t('formula')}: <span className="mono">N = (S1 + S2 + S4 + S6) − 2 × (S3 + S5) + F</span></p>
+          </details>
+        )}
       </section>
 
       <div className="grid grid-3">
@@ -51,14 +58,14 @@ export default function ExecutiveBrief() {
       </div>
 
       <CompetitiveWatch />
-      <Evidence manifest={manifest} />
+      {detail && <Evidence manifest={manifest} />}
       <Disclaimer>{t('outsideView')}</Disclaimer>
     </>
   );
 }
 
 function Headline({ board }) {
-  const { t, lang } = useI18n();
+  const { t, lang, detail } = useI18n();
   const { manifest } = useDash();
   // Placeholder headline composed from verdicts until the H4-approved sentence exists.
   const by = (v) => board.filter((p) => p.current.verdict === v).map((p) => p.platform);
@@ -83,15 +90,15 @@ function Headline({ board }) {
       <p className="note">{t('headlinePending')}</p>
       <div className="headline-meta">
         <div><span>{t('runDate')}</span><span className="tnum">{manifest?.run_date ?? '—'}</span></div>
-        <div><span>H3 · {t('scoredBy')}</span><span>{board[0]?.current.scored_by ?? '—'} · {latestScored ?? '—'}</span></div>
-        <div><span>{t('version')}</span><span className="mono">{manifest?.version ?? '—'}</span></div>
+        <div><span>{detail ? 'H3 · ' : ''}{t('scoredBy')}</span><span>{board[0]?.current.scored_by ?? '—'} · {latestScored ?? '—'}</span></div>
+        {detail && <div><span>{t('version')}</span><span className="mono">{manifest?.version ?? '—'}</span></div>}
       </div>
     </section>
   );
 }
 
 function VerdictCard({ p }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { current, previous, mismatch, verdictChanged } = p;
   const delta = previous ? current.n - previous.n : null;
   return (
@@ -102,7 +109,7 @@ function VerdictCard({ p }) {
       </div>
       <div className="n-score">
         <span className="value">{fmt.signed(current.n)}</span>
-        <span className="label">N</span>
+        <span className="label">{detail ? 'N' : t('netScore')}</span>
         {delta != null && (
           <span className="delta" title={`${t('vsPrevious')} (${previous.scored_date})`}>
             <History size={12} aria-hidden /> {fmt.signed(delta)} {t('vsPrevious')}
@@ -113,11 +120,11 @@ function VerdictCard({ p }) {
         <span className="flag-inline"><Flag size={12} aria-hidden /> {t('verdictChanged')}: {t(previous.verdict)} → {t(current.verdict)}</span>
       )}
       <ConfidenceBadge level={current.confidence} />
-      <dl className="breakdown">
+      {detail && <dl className="breakdown">
         <dt>{t('partnerSide')}</dt><dd>+{current.b}</dd>
         <dt>{t('rivalSide')}</dt><dd>{current.c ? `−${2 * current.c}` : '0'}</dd>
         <dt>{t('ownStrength')}</dt><dd>{fmt.signed(current.f)}</dd>
-      </dl>
+      </dl>}
       {mismatch && <p className="alert-inline" role="alert"><AlertTriangle size={13} aria-hidden style={{ flex: 'none', marginTop: 1 }} />{t('integrity')}</p>}
     </article>
   );
@@ -206,30 +213,32 @@ function TopActions() {
 }
 
 function ActionCard({ r }) {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   return (
     <article className="action-card" id={`rec-${r.rec_id}`} data-verdict={r.verdict}>
       <div className="action-meta">
-        <span className="tag mono">{r.rec_id}</span>
+        {detail && <span className="tag mono">{r.rec_id}</span>}
         <span className="tag">{r.platform}</span>
-        <span className="tag">{t('lever')}: {t(`lever_${r.lever}`)}</span>
+        {detail && <span className="tag">{t('lever')}: {t(`lever_${r.lever}`)}</span>}
       </div>
       <p className="action-text">{r.action}</p>
       <div className="priority-meter" title="Impact × Confidence × Feasibility">
         <span>{t('priority')}</span>
         <span className="track" aria-hidden><span className="fill" style={{ width: `${(r.priority / 27) * 100}%`, display: 'block' }} /></span>
-        <span className="tnum" style={{ fontWeight: 600, color: 'var(--ink)' }}>{r.priority}/27</span>
+        <span className="tnum" style={{ fontWeight: 600, color: 'var(--ink)' }}>{detail ? `${r.priority}/27` : t(`priority_${priorityLevel(r.priority)}`)}</span>
       </div>
       <div className="action-meta" style={{ fontSize: 12, color: 'var(--ink-2)' }}>
         <span>{t('owner')}: {r.owner_role}</span>
-        <span>· {t('kpi')}: <span className="mono">{r.kpi}</span> {r.target_direction === 'rise' ? '↑' : '↓'}</span>
+        {detail
+          ? <span>· {t('kpi')}: <span className="mono">{r.kpi}</span> {r.target_direction === 'rise' ? '↑' : '↓'}</span>
+          : <span>· {t(r.target_direction === 'rise' ? 'goalRise' : 'goalFall', { metric: t(`metric_${r.kpi}`) })}</span>}
       </div>
     </article>
   );
 }
 
 function ParentContext() {
-  const { t } = useI18n();
+  const { t, detail, pickLabel } = useI18n();
   const { data, errors } = useDash();
   const stock = data.emi_stock_daily;
   const seg = data.emi_segments;
@@ -268,7 +277,9 @@ function ParentContext() {
           <div className="stat-tile">
             <span className="stat-label">{t('largestReaction')}</span>
             <span className="stat-value">{biggest ? `${fmt.signed(biggest.excess, 2)}%` : '—'}
-              {biggest && <span className="mono muted" style={{ fontSize: 11, fontWeight: 400 }}>{biggest.event_id}</span>}
+              {biggest && (detail
+                ? <span className="mono muted" style={{ fontSize: 11, fontWeight: 400 }}>{biggest.event_id}</span>
+                : <span className="muted" style={{ fontSize: 12, fontWeight: 400 }}>{pickLabel(biggest)}</span>)}
             </span>
           </div>
         </div>
@@ -280,7 +291,7 @@ function ParentContext() {
 const TRIGGER_ICON = { fired: CircleAlert, clear: CircleCheck, unavailable: CircleDashed };
 
 function Triggers() {
-  const { t } = useI18n();
+  const { t, detail } = useI18n();
   const { data, manifest } = useDash();
   const triggers = useMemo(() => evaluateTriggers(data, manifest?.run_date ?? new Date().toISOString().slice(0, 10)), [data, manifest]);
   return (
@@ -300,7 +311,12 @@ function Triggers() {
               <div className="trigger-body">
                 <div className="trigger-title">{t(`trig_${tr.id}`)} <span className={`status-text ${tr.status}`}>{t(tr.status)}</span></div>
                 <div className="trigger-rule">{t(`trig_${tr.id}_rule`)}</div>
-                {tr.detail.length > 0 && <div className="trigger-detail mono">{tr.detail.join(' · ')}</div>}
+                {detail && tr.detail.length > 0 && <div className="trigger-detail mono">{tr.detail.join(' · ')}</div>}
+                {!detail && tr.status === 'fired' && (
+                  <div className="action-meta" style={{ marginTop: 4 }}>
+                    {[...new Set(tr.hits.map((h) => h.platform).filter(Boolean))].map((p) => <span key={p} className="tag">{p}</span>)}
+                  </div>
+                )}
               </div>
             </li>
           );
@@ -311,7 +327,7 @@ function Triggers() {
 }
 
 function CompetitiveWatch() {
-  const { t, pickLabel } = useI18n();
+  const { t, pickLabel, detail } = useI18n();
   const { data, errors } = useDash();
   const lag = Object.fromEntries((data.amc_pairs ?? []).map((r) => [r.rival, r.median_lag_days]));
   const recent = [...(data.action_response ?? [])].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
@@ -334,7 +350,7 @@ function CompetitiveWatch() {
             <li key={a.action_id}>
               <span className="watch-date tnum">{a.date}</span>
               <div className="watch-body">
-                <span className="watch-title">{a.actor} · {pickLabel(a)} <span className="tag mono" style={{ marginLeft: 4 }}>{a.action_id}</span></span>
+                <span className="watch-title">{a.actor} · {pickLabel(a)} {detail && <span className="tag mono" style={{ marginLeft: 4 }}>{a.action_id}</span>}</span>
                 <span className="muted" style={{ fontSize: 12 }}>{t(`at_${a.action_type}`)}</span>
                 <div className="responses">
                   {a.responses.length === 0 && <span className="muted" style={{ fontSize: 12 }}>{t('noResponse')}</span>}

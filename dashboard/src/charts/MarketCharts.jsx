@@ -13,7 +13,7 @@ const RANGE_DAYS = { r6m: 183, r1y: 365, rAll: Infinity };
 
 /** C1 — EMI vs TAIEX and Gamania, indexed to the first 2024 trading day, with event markers. */
 export function C1IndexedPrice({ range }) {
-  const { t, pickLabel } = useI18n();
+  const { t, pickLabel, codeTag } = useI18n();
   const { data, errors, tokens: tk } = useDash();
   const stock = data.emi_stock_daily;
   const events = data.events;
@@ -45,7 +45,7 @@ export function C1IndexedPrice({ range }) {
       height={300}
       legend={<>
         {series.map((s) => <LegendItem key={s.key} kind="line" color={s.color}>{s.name}</LegendItem>)}
-        <LegendItem kind="tick">{t('events')} (M3)</LegendItem>
+        <LegendItem kind="tick">{t('events')}{codeTag('M3')}</LegendItem>
       </>}
       table={{
         columns: [
@@ -146,12 +146,12 @@ export function C2Segments() {
 
 /** C3 — Audience share (M5) and trust by brand for the snapshot year. ETtoday highlighted. */
 export function C3AudienceTrust({ year }) {
-  const { t } = useI18n();
+  const { t, codeTag } = useI18n();
   const { data, errors, tokens: tk } = useDash();
   const all = data.market_share ?? [];
   const rows = all.filter((r) => r.year === year);
   const series = [
-    { key: 'audience_share_pct', name: `${t('audienceShare')} (M5)`, color: tk['series-1'] },
+    { key: 'audience_share_pct', name: `${t('audienceShare')}${codeTag('M5')}`, color: tk['series-1'] },
     { key: 'trust_pct', name: t('trust'), color: tk['series-2'] },
   ];
 

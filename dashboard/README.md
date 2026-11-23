@@ -18,6 +18,16 @@ npm run sample-data  # regenerate the SAMPLE files in public/data
 | `#/watch` (`#/watch/YYYY-Www`) | Weekly Platform Watch Brief, one week at a time: headline, this week's moves, verdict status, triggers fired, recommended responses (each with its action card), parent-company context, watch next week. Week selector plus an archive of every week, newest first. Defaults to the latest week. | §5.7, §5.6, §5.3 |
 | `#/analytics` | C1–C8 in three sections (`/market`, `/network`, `/competitive`), one filter row (price range, snapshot year) | §4.5 |
 
+**Summary / Detail** (switch in the top bar, next to 中 / EN, remembered per browser).
+- **Summary** is the default, for management meetings. It uses plain language: no formulas, metric codes, record IDs, file names or review-gate codes (H3/H4).
+  - The verdict cards show the verdict, net score, change and confidence, with a "How the score works" note under the board.
+  - Action priority shows as High (18 or more out of 27), Medium (9 or more) or Low. These thresholds are a dashboard convention, not a PRD rule.
+  - KPIs read as goals, e.g. "Goal: raise share of readers on ETtoday's own channels".
+  - Source lines use plain source names.
+  - The SAMPLE, estimate and indicative tags, as-of dates and data-integrity warnings stay visible.
+- **Detail** is the analyst and audit view: everything below, unchanged.
+- Plain wording lives in `lib/i18n.jsx` as `key.summary` entries next to the original key.
+
 Every chart card shows its ID, its question, a source line, the as-of date, estimate/indicative tags, verified record IDs, and a **Table** toggle (the accessible fallback).
 
 ## How the data works

@@ -46,17 +46,17 @@
     {
       "name": "decision_scores.json",
       "rows": 8,
-      "checksum": "81fef6540ce214cb"
+      "checksum": "834fd497889b1cb9"
     },
     {
       "name": "recommendations.json",
       "rows": 9,
-      "checksum": "debc916b50ae56f6"
+      "checksum": "bfd5659df7502b94"
     },
     {
       "name": "watch_briefs.json",
       "rows": 4,
-      "checksum": "3b14d09e915b0aad"
+      "checksum": "53f32fbd8a46c9a6"
     }
   ],
   "checked_by": null

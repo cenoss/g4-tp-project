@@ -155,6 +155,9 @@ export function diffRecords(stored, computed, keyOf) {
 // §5.4: the brief shows approved cards only, ranked by priority, at most three per horizon.
 export const HORIZONS = ['now', 'next', 'later'];
 export const MAX_PER_HORIZON = 3;
+// Summary-mode label for priority (max 27). Dashboard convention, not a PRD rule.
+export const priorityLevel = (p) => (p >= 18 ? 'high' : p >= 9 ? 'medium' : 'low');
+
 export function topActionsByHorizon(recs) {
   const approved = recs.filter((r) => r.status === 'approved');
   return Object.fromEntries(HORIZONS.map((h) => [h, approved.filter((r) => r.horizon === h).sort((a, b) => b.priority - a.priority).slice(0, MAX_PER_HORIZON)]));

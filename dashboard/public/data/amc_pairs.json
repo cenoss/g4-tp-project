@@ -1,72 +1,72 @@
 [
   {
     "rival": "NOWnews",
-    "mc": 0.72,
-    "rs": 0.59,
-    "awareness": 0,
-    "motivation": 1,
+    "mc": 0.82,
+    "rs": 0.71,
+    "awareness": 2,
+    "motivation": 2,
     "capability": 1,
-    "likelihood": 0.14,
-    "median_lag_days": 19
+    "likelihood": 0.49,
+    "median_lag_days": 9
   },
   {
     "rival": "TVBS",
-    "mc": 0.57,
-    "rs": 0.47,
-    "awareness": 1,
+    "mc": 0.78,
+    "rs": 0.66,
+    "awareness": 2,
     "motivation": 2,
     "capability": 2,
-    "likelihood": 0.22,
-    "median_lag_days": 41
+    "likelihood": 0.51,
+    "median_lag_days": 14
   },
   {
     "rival": "SETN",
-    "mc": 0.77,
-    "rs": 0.76,
-    "awareness": 1,
-    "motivation": 1,
+    "mc": 0.88,
+    "rs": 0.74,
+    "awareness": 2,
+    "motivation": 2,
     "capability": 2,
-    "likelihood": 0.39,
-    "median_lag_days": 13
+    "likelihood": 0.65,
+    "median_lag_days": 7
   },
   {
     "rival": "EBC",
-    "mc": 0.78,
-    "rs": 0.72,
+    "mc": 0.71,
+    "rs": 0.69,
     "awareness": 1,
     "motivation": 2,
-    "capability": 1,
-    "likelihood": 0.37,
-    "median_lag_days": 38
+    "capability": 2,
+    "likelihood": 0.41,
+    "median_lag_days": 12
   },
   {
     "rival": "UDN",
-    "mc": 0.9,
-    "rs": 0.62,
-    "awareness": 1,
+    "mc": 0.62,
+    "rs": 0.58,
+    "awareness": 2,
     "motivation": 1,
-    "capability": 0,
-    "likelihood": 0.19,
-    "median_lag_days": 27
+    "capability": 2,
+    "likelihood": 0.3,
+    "median_lag_days": 21
   },
   {
     "rival": "LTN",
-    "mc": 0.49,
-    "rs": 0.5,
+    "mc": 0.55,
+    "rs": 0.52,
     "awareness": 1,
     "motivation": 1,
-    "capability": 0,
-    "likelihood": 0.08,
-    "median_lag_days": 45
+    "capability": 2,
+    "likelihood": 0.19,
+    "median_lag_days": 28
   },
   {
     "rival": "CNA",
-    "mc": 0.74,
-    "rs": 0.4,
+    "mc": 0.41,
+    "rs": 0.45,
     "awareness": 1,
     "motivation": 0,
     "capability": 1,
-    "likelihood": 0.1,
-    "median_lag_days": 46
+    "likelihood": 0.06,
+    "median_lag_days": 45
   }
 ]

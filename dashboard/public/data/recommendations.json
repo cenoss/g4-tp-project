@@ -4,210 +4,36 @@
     "platform": "Google",
     "verdict": "mixed",
     "lever": "added_value",
-    "action": "Sample action 1: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "action": "Keep full stories and video on owned pages, and give search only headlines and summaries marked up for citation in AI Overviews.",
+    "rationale": "AI Overviews answer many news queries without a click. Being the cited source keeps referral traffic while full value stays on ETtoday pages.",
     "evidence_ids": [
-      "EV-SAMPLE-001"
+      "EV-20250310-002"
     ],
     "metric_ids": [
-      "M6"
+      "N3",
+      "N4"
     ],
-    "confidence": "strong",
+    "confidence": "moderate",
     "impact": 3,
     "feasibility": 3,
-    "priority": 27,
+    "priority": 18,
     "horizon": "now",
-    "owner_role": "legal & policy",
-    "kpi": "M6",
+    "owner_role": "audience growth",
+    "kpi": "N4",
     "target_direction": "rise",
-    "revisit_trigger": "Placeholder trigger condition",
+    "revisit_trigger": "Search share of ETtoday traffic falls 3 pp or more in a quarter",
     "status": "approved",
-    "approved_by": "Reviewer (sample)"
+    "approved_by": "H4 review pair"
   },
   {
     "rec_id": "REC-002",
     "platform": "Meta",
     "verdict": "rival",
     "lever": "scope",
-    "action": "Sample action 2: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
+    "action": "Shift short-video output from Facebook Reels to the ETtoday app and YouTube, keeping Facebook for headline links only.",
+    "rationale": "Facebook referrals have fallen since the 2025 feed-ranking change, and Reels payouts do not cover production costs.",
     "evidence_ids": [
-      "EV-SAMPLE-002"
-    ],
-    "metric_ids": [
-      "M6"
-    ],
-    "confidence": "strong",
-    "impact": 2,
-    "feasibility": 3,
-    "priority": 18,
-    "horizon": "next",
-    "owner_role": "ad sales",
-    "kpi": "M6",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "approved",
-    "approved_by": "Reviewer (sample)"
-  },
-  {
-    "rec_id": "REC-003",
-    "platform": "LINE",
-    "verdict": "partner",
-    "lever": "added_value",
-    "action": "Sample action 3: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-003"
-    ],
-    "metric_ids": [
-      "M6"
-    ],
-    "confidence": "strong",
-    "impact": 3,
-    "feasibility": 1,
-    "priority": 9,
-    "horizon": "later",
-    "owner_role": "audience growth",
-    "kpi": "M6",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "approved",
-    "approved_by": "Reviewer (sample)"
-  },
-  {
-    "rec_id": "REC-004",
-    "platform": "YouTube",
-    "verdict": "mixed",
-    "lever": "tactics",
-    "action": "Sample action 4: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-004"
-    ],
-    "metric_ids": [
-      "A5"
-    ],
-    "confidence": "strong",
-    "impact": 1,
-    "feasibility": 1,
-    "priority": 3,
-    "horizon": "now",
-    "owner_role": "product",
-    "kpi": "A5",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "approved",
-    "approved_by": "Reviewer (sample)"
-  },
-  {
-    "rec_id": "REC-005",
-    "platform": "Google",
-    "verdict": "mixed",
-    "lever": "tactics",
-    "action": "Sample action 5: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-005"
-    ],
-    "metric_ids": [
-      "M5"
-    ],
-    "confidence": "moderate",
-    "impact": 1,
-    "feasibility": 3,
-    "priority": 6,
-    "horizon": "next",
-    "owner_role": "ad sales",
-    "kpi": "M5",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "approved",
-    "approved_by": "Reviewer (sample)"
-  },
-  {
-    "rec_id": "REC-006",
-    "platform": "Meta",
-    "verdict": "rival",
-    "lever": "rules",
-    "action": "Sample action 6: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-006"
-    ],
-    "metric_ids": [
-      "M5"
-    ],
-    "confidence": "strong",
-    "impact": 1,
-    "feasibility": 2,
-    "priority": 6,
-    "horizon": "later",
-    "owner_role": "product",
-    "kpi": "M5",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "approved",
-    "approved_by": "Reviewer (sample)"
-  },
-  {
-    "rec_id": "REC-007",
-    "platform": "LINE",
-    "verdict": "partner",
-    "lever": "tactics",
-    "action": "Sample action 7: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-007"
-    ],
-    "metric_ids": [
-      "A5"
-    ],
-    "confidence": "moderate",
-    "impact": 1,
-    "feasibility": 3,
-    "priority": 6,
-    "horizon": "now",
-    "owner_role": "ad sales",
-    "kpi": "A5",
-    "target_direction": "rise",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "draft",
-    "approved_by": null
-  },
-  {
-    "rec_id": "REC-008",
-    "platform": "YouTube",
-    "verdict": "mixed",
-    "lever": "scope",
-    "action": "Sample action 8: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-008"
-    ],
-    "metric_ids": [
-      "M6"
-    ],
-    "confidence": "moderate",
-    "impact": 3,
-    "feasibility": 3,
-    "priority": 18,
-    "horizon": "next",
-    "owner_role": "audience growth",
-    "kpi": "M6",
-    "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
-    "status": "draft",
-    "approved_by": null
-  },
-  {
-    "rec_id": "REC-009",
-    "platform": "Google",
-    "verdict": "mixed",
-    "lever": "tactics",
-    "action": "Sample action 9: placeholder verb-first recommendation text",
-    "rationale": "Placeholder rationale. Drafted by the Business Strategist from verified evidence and approved at H4.",
-    "evidence_ids": [
-      "EV-SAMPLE-009"
+      "EV-20250618-005"
     ],
     "metric_ids": [
       "N3"
@@ -216,11 +42,192 @@
     "impact": 3,
     "feasibility": 2,
     "priority": 18,
-    "horizon": "later",
-    "owner_role": "platform partnerships",
+    "horizon": "next",
+    "owner_role": "audience growth",
     "kpi": "N3",
     "target_direction": "fall",
-    "revisit_trigger": "Placeholder trigger condition",
+    "revisit_trigger": "Meta restores news-link weight in feed ranking",
+    "status": "approved",
+    "approved_by": "H4 review pair"
+  },
+  {
+    "rec_id": "REC-003",
+    "platform": "LINE",
+    "verdict": "partner",
+    "lever": "added_value",
+    "action": "Offer LINE TODAY exclusive explainer videos in exchange for a higher revenue share and audience data.",
+    "rationale": "LINE TODAY reaches the widest news audience and the 2025 licensing deal performed well; exclusives strengthen the next negotiation.",
+    "evidence_ids": [
+      "EV-20250527-004",
+      "EV-20260414-012"
+    ],
+    "metric_ids": [
+      "N1",
+      "M6"
+    ],
+    "confidence": "moderate",
+    "impact": 2,
+    "feasibility": 2,
+    "priority": 8,
+    "horizon": "later",
+    "owner_role": "platform partnerships",
+    "kpi": "M6",
+    "target_direction": "rise",
+    "revisit_trigger": "LINE TODAY changes partner revenue share again",
+    "status": "approved",
+    "approved_by": "H4 review pair"
+  },
+  {
+    "rec_id": "REC-004",
+    "platform": "YouTube",
+    "verdict": "mixed",
+    "lever": "tactics",
+    "action": "Sell YouTube channel video together with on-site pre-roll as one package for advertisers.",
+    "rationale": "Video ad budgets are moving to YouTube; packaging both keeps the buyer relationship with ETtoday ad sales.",
+    "evidence_ids": [
+      "EV-20251209-009"
+    ],
+    "metric_ids": [
+      "M6"
+    ],
+    "confidence": "strong",
+    "impact": 2,
+    "feasibility": 3,
+    "priority": 18,
+    "horizon": "now",
+    "owner_role": "ad sales",
+    "kpi": "M6",
+    "target_direction": "rise",
+    "revisit_trigger": "A close rival matches the package within its median lag",
+    "status": "approved",
+    "approved_by": "H4 review pair"
+  },
+  {
+    "rec_id": "REC-005",
+    "platform": "Google",
+    "verdict": "mixed",
+    "lever": "tactics",
+    "action": "Publish exclusives in the app and newsletter 30 minutes before they are opened to search indexing.",
+    "rationale": "A short head start moves loyal readers to owned channels without giving up search reach on the story.",
+    "evidence_ids": [
+      "EV-20250310-002",
+      "EV-20260120-010"
+    ],
+    "metric_ids": [
+      "N4"
+    ],
+    "confidence": "moderate",
+    "impact": 2,
+    "feasibility": 2,
+    "priority": 8,
+    "horizon": "next",
+    "owner_role": "product",
+    "kpi": "N4",
+    "target_direction": "rise",
+    "revisit_trigger": "Owned ratio (N4) stops rising for two quarters",
+    "status": "approved",
+    "approved_by": "H4 review pair"
+  },
+  {
+    "rec_id": "REC-006",
+    "platform": "Meta",
+    "verdict": "rival",
+    "lever": "rules",
+    "action": "Support bargaining-bill provisions that require platforms to give publishers notice of feed-ranking changes.",
+    "rationale": "Unannounced ranking changes cut ETtoday traffic in 2025; notice rules reduce that risk for every platform.",
+    "evidence_ids": [
+      "EV-20250923-007",
+      "EV-20260707-014"
+    ],
+    "metric_ids": [
+      "N3"
+    ],
+    "confidence": "strong",
+    "impact": 2,
+    "feasibility": 1,
+    "priority": 6,
+    "horizon": "later",
+    "owner_role": "legal & policy",
+    "kpi": "N3",
+    "target_direction": "fall",
+    "revisit_trigger": "The draft bargaining bill passes committee review or is withdrawn",
+    "status": "approved",
+    "approved_by": "H4 review pair"
+  },
+  {
+    "rec_id": "REC-007",
+    "platform": "LINE",
+    "verdict": "partner",
+    "lever": "tactics",
+    "action": "Co-promote the ad-free membership through LINE official account rich menus.",
+    "rationale": "LINE official accounts reach readers who already follow ETtoday, at low acquisition cost.",
+    "evidence_ids": [
+      "EV-20260519-013"
+    ],
+    "metric_ids": [
+      "N4"
+    ],
+    "confidence": "moderate",
+    "impact": 2,
+    "feasibility": 3,
+    "priority": 12,
+    "horizon": "now",
+    "owner_role": "audience growth",
+    "kpi": "N4",
+    "target_direction": "rise",
+    "revisit_trigger": "Membership sign-ups from LINE fall below 10% of the total",
+    "status": "draft",
+    "approved_by": null
+  },
+  {
+    "rec_id": "REC-008",
+    "platform": "YouTube",
+    "verdict": "mixed",
+    "lever": "scope",
+    "action": "Pilot a dedicated Shorts news channel that links back to full reports in the app.",
+    "rationale": "Shorts reach younger readers ETtoday does not reach on its own channels; links back test whether that reach converts.",
+    "evidence_ids": [
+      "EV-20251209-009"
+    ],
+    "metric_ids": [
+      "N1",
+      "N4"
+    ],
+    "confidence": "moderate",
+    "impact": 2,
+    "feasibility": 2,
+    "priority": 8,
+    "horizon": "next",
+    "owner_role": "product",
+    "kpi": "N4",
+    "target_direction": "rise",
+    "revisit_trigger": "YouTube changes how Shorts link to external sites",
+    "status": "draft",
+    "approved_by": null
+  },
+  {
+    "rec_id": "REC-009",
+    "platform": "Google",
+    "verdict": "mixed",
+    "lever": "rules",
+    "action": "Prepare a licensing offer covering summary and AI-training use of ETtoday archives.",
+    "rationale": "If bargaining rules pass, a ready offer lets ETtoday negotiate early rather than accept a standard rate.",
+    "evidence_ids": [
+      "EV-20250923-007",
+      "EV-20260707-014"
+    ],
+    "metric_ids": [
+      "N3"
+    ],
+    "confidence": "moderate",
+    "impact": 3,
+    "feasibility": 1,
+    "priority": 6,
+    "horizon": "later",
+    "owner_role": "legal & policy",
+    "kpi": "N3",
+    "target_direction": "fall",
+    "revisit_trigger": "Bargaining rules require platforms to pay for news use",
     "status": "draft",
     "approved_by": null
   }

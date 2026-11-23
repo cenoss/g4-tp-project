@@ -11,52 +11,52 @@
     {
       "name": "emi_segments.csv",
       "rows": 12,
-      "checksum": "e70d059be1b8bf72"
+      "checksum": "471160c8c1a5f529"
     },
     {
       "name": "market_share.csv",
       "rows": 24,
-      "checksum": "06dbe04ade244d8d"
+      "checksum": "cdc10417bd4f9bdf"
     },
     {
       "name": "network_effects.csv",
       "rows": 12,
-      "checksum": "8efa82f14deaed17"
+      "checksum": "874a59f198c91f27"
     },
     {
       "name": "traffic_mix.csv",
       "rows": 15,
-      "checksum": "5dbf6b46f1b3c80f"
+      "checksum": "2103e382df27387f"
     },
     {
       "name": "amc_pairs.json",
       "rows": 7,
-      "checksum": "6f26b082f06ead3f"
+      "checksum": "37349f186f20b0cd"
     },
     {
       "name": "events.json",
       "rows": 22,
-      "checksum": "b28e625d49e02440"
+      "checksum": "18ea68e538d74e06"
     },
     {
       "name": "action_response.json",
       "rows": 12,
-      "checksum": "6fb8c961490893fa"
+      "checksum": "864589586f088d5e"
     },
     {
       "name": "decision_scores.json",
       "rows": 8,
-      "checksum": "eb9459d80a57e903"
+      "checksum": "81fef6540ce214cb"
     },
     {
       "name": "recommendations.json",
       "rows": 9,
-      "checksum": "a3af4f170e3198e9"
+      "checksum": "debc916b50ae56f6"
     },
     {
       "name": "watch_briefs.json",
       "rows": 4,
-      "checksum": "b78a016831cea76e"
+      "checksum": "3b14d09e915b0aad"
     }
   ],
   "checked_by": null

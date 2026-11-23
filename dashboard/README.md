@@ -24,6 +24,7 @@ Every chart card shows its ID, its question, a source line, the as-of date, esti
 
 The app reads only `public/data/*` (the PRD's `/data` folder). **To go live, replace those files with verified exports that use the same field names.** Nothing else changes.
 
+- The sample files (`npm run sample-data`) are written as believable but **fictional** scenarios: specific platform, rival and policy moves, action cards and annual figures that tell a consistent story. None of it is a finding. No real people are named, and the EMI price series is a synthetic random walk.
 - `manifest.json` with `"sample": true` (or a missing manifest) → SAMPLE banner and tags on every card. Remove the flag for real data. A non-null `checked_by` shows "Verified data".
 - A file that fails to load blanks only its own panels with an error. Nothing is guessed (fail closed).
 - Computed on the client from the PRD formulas: N and the verdict (an integrity check flags stored N values that don't match the formula), M3 excess returns, N4 owned ratio, the §5.6 triggers, and action ranking with at most three cards per horizon.

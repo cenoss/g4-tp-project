@@ -4,8 +4,8 @@
     "period_start": "2026-10-19",
     "period_end": "2026-10-25",
     "run_date": "2026-10-26",
-    "headline_en": "Sample headline: placeholder for the week’s most important change.",
-    "headline_zh": "範例標題：本週最重要變化的佔位文字。",
+    "headline_en": "The bargaining bill moves to committee review and Google widens AI Overviews on breaking news. Rules-lever cards are reopened.",
+    "headline_zh": "新聞議價法草案進入委員會審查，Google 擴大即時新聞 AI 摘要；規則槓桿行動卡重新檢視。",
     "moves": [
       {
         "event_id": "EV-20261020-017",
@@ -52,25 +52,20 @@
     "watch_next": [
       {
         "date": "2026-10-28",
-        "label_en": "Sample scheduled item 1",
-        "label_zh": "範例預定事項 1"
-      },
-      {
-        "date": "2026-10-30",
-        "label_en": "Sample scheduled item 2",
-        "label_zh": "範例預定事項 2"
+        "label_en": "Legislative Yuan committee hearing on the bargaining bill",
+        "label_zh": "立法院委員會就議價法草案舉行公聽會"
       }
     ],
     "status": "approved",
-    "approved_by": "Reviewer (sample)"
+    "approved_by": "H4 review pair"
   },
   {
     "week": "2026-W44",
     "period_start": "2026-10-26",
     "period_end": "2026-11-01",
     "run_date": "2026-11-02",
-    "headline_en": "Sample headline: no change this week.",
-    "headline_zh": "範例標題：本週無變化。",
+    "headline_en": "No change. No platform or rival move met the filters this week.",
+    "headline_zh": "無變化：本週沒有符合篩選條件的平台或對手動態。",
     "moves": [],
     "triggers_fired": [],
     "verdict_changes": [],
@@ -82,20 +77,20 @@
     "watch_next": [
       {
         "date": "2026-11-04",
-        "label_en": "Sample scheduled item 3",
-        "label_zh": "範例預定事項 3"
+        "label_en": "LINE TODAY briefing for content partners",
+        "label_zh": "LINE TODAY 內容夥伴說明會"
       }
     ],
     "status": "approved",
-    "approved_by": "Reviewer (sample)"
+    "approved_by": "H4 review pair"
   },
   {
     "week": "2026-W45",
     "period_start": "2026-11-02",
     "period_end": "2026-11-08",
     "run_date": "2026-11-09",
-    "headline_en": "Sample headline: placeholder for the week’s most important change.",
-    "headline_zh": "範例標題：本週最重要變化的佔位文字。",
+    "headline_en": "NOWnews undercuts video ad bundles. Respond fast with a combined YouTube and on-site video package.",
+    "headline_zh": "今日新聞以低價影音廣告組合搶客；建議以 YouTube 與站內影音合併方案快速回應。",
     "moves": [
       {
         "event_id": "EV-20261103-019",
@@ -133,17 +128,17 @@
     "watch_next": [
       {
         "date": "2026-11-11",
-        "label_en": "Sample scheduled item 5",
-        "label_zh": "範例預定事項 5"
+        "label_en": "YouTube Taiwan news partner briefing",
+        "label_zh": "YouTube 台灣新聞夥伴說明會"
       },
       {
-        "date": "2026-11-13",
-        "label_en": "Sample scheduled item 6",
-        "label_zh": "範例預定事項 6"
+        "date": "2026-11-14",
+        "label_en": "Quarterly H3 re-scoring of all four platforms",
+        "label_zh": "四大平台季度 H3 重新評分"
       }
     ],
     "status": "approved",
-    "approved_by": "Reviewer (sample)"
+    "approved_by": "H4 review pair"
   },
   {
     "week": "2026-W46",
@@ -205,13 +200,13 @@
     "watch_next": [
       {
         "date": "2026-11-18",
-        "label_en": "Sample scheduled item 7",
-        "label_zh": "範例預定事項 7"
+        "label_en": "Strategy pair re-reviews Google at H3 after the verdict change",
+        "label_zh": "判定變更後，策略小組於 H3 重新檢視 Google"
       },
       {
         "date": "2026-11-20",
-        "label_en": "Sample scheduled item 8",
-        "label_zh": "範例預定事項 8"
+        "label_en": "NCC consultation on platform news distribution closes",
+        "label_zh": "NCC 平台新聞分發規範諮詢截止"
       }
     ],
     "status": "draft",

@@ -1,178 +1,178 @@
 [
   {
-    "event_id": "EV-20250129-001",
-    "date": "2025-01-29",
+    "event_id": "EV-20250203-001",
+    "date": "2025-02-03",
     "actor": "ETtoday",
     "action_type": "pricing",
-    "label_zh": "範例事件 1",
-    "label_en": "Sample event 1"
+    "label_zh": "調高文章頁程序化廣告底價",
+    "label_en": "Raises programmatic ad floor prices on article pages"
   },
   {
-    "event_id": "EV-20250305-002",
-    "date": "2025-03-05",
+    "event_id": "EV-20250310-002",
+    "date": "2025-03-10",
+    "actor": "Google",
+    "action_type": "new_product_format",
+    "label_zh": "將 AI 摘要擴及繁體中文新聞查詢",
+    "label_en": "Widens AI Overviews to Traditional Chinese news queries"
+  },
+  {
+    "event_id": "EV-20250415-003",
+    "date": "2025-04-15",
     "actor": "SETN",
     "action_type": "new_product_format",
-    "label_zh": "範例事件 2",
-    "label_en": "Sample event 2"
+    "label_zh": "App 新增直式短影音新聞",
+    "label_en": "Adds a vertical short-video news feed to its app"
   },
   {
-    "event_id": "EV-20250422-003",
-    "date": "2025-04-22",
-    "actor": "NOWnews",
-    "action_type": "pricing",
-    "label_zh": "範例事件 3",
-    "label_en": "Sample event 3"
-  },
-  {
-    "event_id": "EV-20250601-004",
-    "date": "2025-06-01",
-    "actor": "Meta",
-    "action_type": "promotion",
-    "label_zh": "範例事件 4",
-    "label_en": "Sample event 4"
-  },
-  {
-    "event_id": "EV-20250628-005",
-    "date": "2025-06-28",
+    "event_id": "EV-20250527-004",
+    "date": "2025-05-27",
     "actor": "ETtoday",
     "action_type": "partnership_licensing",
-    "label_zh": "範例事件 5",
-    "label_en": "Sample event 5"
+    "label_zh": "與 LINE TODAY 簽訂影音授權",
+    "label_en": "Signs a video licensing deal with LINE TODAY"
   },
   {
-    "event_id": "EV-20250811-006",
-    "date": "2025-08-11",
+    "event_id": "EV-20250618-005",
+    "date": "2025-06-18",
+    "actor": "Meta",
+    "action_type": "new_product_format",
+    "label_zh": "Facebook 降低新聞連結在動態排序中的權重",
+    "label_en": "Facebook lowers the weight of news links in feed ranking"
+  },
+  {
+    "event_id": "EV-20250812-006",
+    "date": "2025-08-12",
+    "actor": "ETtoday",
+    "action_type": "staffing_ai_restructuring",
+    "label_zh": "成立 AI 編輯台，處理摘要與標籤",
+    "label_en": "Sets up an AI desk for summaries and tagging"
+  },
+  {
+    "event_id": "EV-20250923-007",
+    "date": "2025-09-23",
+    "actor": "Government",
+    "action_type": "regulatory_legal",
+    "label_zh": "數位發展部公布平台與新聞媒體議價框架草案",
+    "label_en": "Ministry of Digital Affairs publishes a draft platform–publisher bargaining framework"
+  },
+  {
+    "event_id": "EV-20251028-008",
+    "date": "2025-10-28",
     "actor": "NOWnews",
     "action_type": "pricing",
-    "label_zh": "範例事件 6",
-    "label_en": "Sample event 6"
+    "label_zh": "調降中小企業業配價格",
+    "label_en": "Cuts sponsored-content rates for small advertisers"
   },
   {
-    "event_id": "EV-20251007-007",
-    "date": "2025-10-07",
+    "event_id": "EV-20251209-009",
+    "date": "2025-12-09",
     "actor": "YouTube",
-    "action_type": "staffing_ai_restructuring",
-    "label_zh": "範例事件 7",
-    "label_en": "Sample event 7"
-  },
-  {
-    "event_id": "EV-20251110-008",
-    "date": "2025-11-10",
-    "actor": "Meta",
-    "action_type": "regulatory_legal",
-    "label_zh": "範例事件 8",
-    "label_en": "Sample event 8"
-  },
-  {
-    "event_id": "EV-20251212-009",
-    "date": "2025-12-12",
-    "actor": "ETtoday",
-    "action_type": "staffing_ai_restructuring",
-    "label_zh": "範例事件 9",
-    "label_en": "Sample event 9"
-  },
-  {
-    "event_id": "EV-20260128-010",
-    "date": "2026-01-28",
-    "actor": "ETtoday",
-    "action_type": "regulatory_legal",
-    "label_zh": "範例事件 10",
-    "label_en": "Sample event 10"
-  },
-  {
-    "event_id": "EV-20260302-011",
-    "date": "2026-03-02",
-    "actor": "TVBS",
     "action_type": "promotion",
-    "label_zh": "範例事件 11",
-    "label_en": "Sample event 11"
+    "label_zh": "推出台灣新聞媒體創作者計畫",
+    "label_en": "Opens a news creator programme for Taiwanese publishers"
   },
   {
-    "event_id": "EV-20260417-012",
-    "date": "2026-04-17",
+    "event_id": "EV-20260120-010",
+    "date": "2026-01-20",
+    "actor": "ETtoday",
+    "action_type": "new_product_format",
+    "label_zh": "App 改版，首頁改為個人化推薦",
+    "label_en": "Relaunches its app with a personalised home feed"
+  },
+  {
+    "event_id": "EV-20260224-011",
+    "date": "2026-02-24",
+    "actor": "TVBS",
+    "action_type": "acquisition_investment",
+    "label_zh": "投資數據新聞工作室",
+    "label_en": "Invests in a data-journalism studio"
+  },
+  {
+    "event_id": "EV-20260414-012",
+    "date": "2026-04-14",
     "actor": "LINE",
     "action_type": "partnership_licensing",
-    "label_zh": "範例事件 12",
-    "label_en": "Sample event 12"
+    "label_zh": "LINE TODAY 調整內容夥伴分潤條款",
+    "label_en": "LINE TODAY revises revenue-share terms for content partners"
   },
   {
-    "event_id": "EV-20260522-013",
-    "date": "2026-05-22",
+    "event_id": "EV-20260519-013",
+    "date": "2026-05-19",
     "actor": "ETtoday",
     "action_type": "pricing",
-    "label_zh": "範例事件 13",
-    "label_en": "Sample event 13"
+    "label_zh": "推出付費免廣告會員方案",
+    "label_en": "Launches a paid ad-free membership tier"
   },
   {
-    "event_id": "EV-20260719-014",
-    "date": "2026-07-19",
+    "event_id": "EV-20260707-014",
+    "date": "2026-07-07",
     "actor": "Government",
-    "action_type": "promotion",
-    "label_zh": "範例事件 14",
-    "label_en": "Sample event 14"
+    "action_type": "regulatory_legal",
+    "label_zh": "NCC 就平台新聞分發規範召開公眾諮詢",
+    "label_en": "NCC opens a public consultation on platform news distribution"
   },
   {
-    "event_id": "EV-20260826-015",
-    "date": "2026-08-26",
+    "event_id": "EV-20260818-015",
+    "date": "2026-08-18",
     "actor": "LTN",
     "action_type": "promotion",
-    "label_zh": "範例事件 15",
-    "label_en": "Sample event 15"
+    "label_zh": "推出數位訂閱免費試用活動",
+    "label_en": "Runs a free-trial campaign for its digital subscription"
   },
   {
-    "event_id": "EV-20260930-016",
-    "date": "2026-09-30",
+    "event_id": "EV-20260929-016",
+    "date": "2026-09-29",
     "actor": "EBC",
-    "action_type": "pricing",
-    "label_zh": "範例事件 16",
-    "label_en": "Sample event 16"
+    "action_type": "new_product_format",
+    "label_zh": "推出 AI 輔助的夜間新聞快報",
+    "label_en": "Launches an AI-assisted overnight news bulletin"
   },
   {
     "event_id": "EV-20261020-017",
     "date": "2026-10-20",
     "actor": "Government",
     "action_type": "regulatory_legal",
-    "label_zh": "範例事件 17",
-    "label_en": "Sample event 17"
+    "label_zh": "立法院委員會排審新聞議價法草案",
+    "label_en": "Legislative Yuan committee schedules review of the draft news bargaining bill"
   },
   {
     "event_id": "EV-20261022-018",
     "date": "2026-10-22",
     "actor": "Google",
     "action_type": "new_product_format",
-    "label_zh": "範例事件 18",
-    "label_en": "Sample event 18"
+    "label_zh": "在更多台灣即時新聞搜尋中顯示 AI 摘要",
+    "label_en": "Shows AI Overviews on more Taiwan breaking-news searches"
   },
   {
     "event_id": "EV-20261103-019",
     "date": "2026-11-03",
     "actor": "NOWnews",
     "action_type": "pricing",
-    "label_zh": "範例事件 19",
-    "label_en": "Sample event 19"
+    "label_zh": "推出影音前貼片與橫幅廣告優惠組合",
+    "label_en": "Sells video pre-roll and display ads as a discounted bundle"
   },
   {
     "event_id": "EV-20261105-020",
     "date": "2026-11-05",
     "actor": "LINE",
     "action_type": "partnership_licensing",
-    "label_zh": "範例事件 20",
-    "label_en": "Sample event 20"
+    "label_zh": "LINE TODAY 開放媒體影音頻道計畫",
+    "label_en": "LINE TODAY opens a video channel programme for publishers"
   },
   {
     "event_id": "EV-20261111-021",
     "date": "2026-11-11",
     "actor": "Meta",
     "action_type": "promotion",
-    "label_zh": "範例事件 21",
-    "label_en": "Sample event 21"
+    "label_zh": "為新聞粉專 Reels 提供額外獎勵金",
+    "label_en": "Offers bonus payouts for Reels from news pages"
   },
   {
     "event_id": "EV-20261113-022",
     "date": "2026-11-13",
     "actor": "YouTube",
     "action_type": "new_product_format",
-    "label_zh": "範例事件 22",
-    "label_en": "Sample event 22"
+    "label_zh": "新增台灣 Shorts 焦點新聞專區",
+    "label_en": "Adds a Taiwan top-news shelf for Shorts"
   }
 ]
